@@ -6,7 +6,7 @@ using namespace std;
 
 int choise;
 ofstream fout;
-ifstream fin;
+
 
 
 // поля для заполнения классов Работники
@@ -235,14 +235,14 @@ int main()
             cin >> choise;
             switch (choise)
             {
-            case 1:
+            case 1: //создать 
             {
                 cout << "Кого вы хотите создать?" << endl;
                 cout << "Водитель - 1  Охраник - 2 Уборщик - 3 Вернуться назад - 4" << endl;
                 cin >> choise;
                 switch (choise)
                 {
-                case 1:
+                case 1: //создать водителя
                 {
                     cout << "Введите имя: " << endl;
                     cin >> name;
@@ -295,7 +295,7 @@ int main()
                     fout.close();
                     break;
                 }
-                case 2:
+                case 2: //создать охраника
                 {
                     cout << "Введите имя: " << endl;
                     cin >> name;
@@ -349,7 +349,7 @@ int main()
                     fout.close();
                     break;
                 }
-                case 3:
+                case 3: //создать уборщика
                 {
                     cout << "Введите имя: " << endl;
                     cin >> name;
@@ -402,7 +402,7 @@ int main()
                     fout.close();
                     break;
                 }
-                case 4:
+                case 4://Назад
                 {
                     break;
                 }
@@ -417,21 +417,40 @@ int main()
                 
                 break;
             }
-            case 2:
+            case 2: //уволить
             {
                 //Уволить
                 cout << " Увольнение\n";
                 break;
             }
-            case 3:
+            case 3: //просмотр
             {
-                //просмотр
-                //cout << " Просмотр\n";
-                cout << "Drivers" << endl;
+                ifstream fin;
+                cout << "             Drivers" << endl;
                 cout << "---------------------------------" << endl;
+                fin.open(path_driver);
+                
+                if (!fin.is_open())
+                {
+                    cout << "Ошибка открытия файла" << endl;
+                }
+                else
+                {
+                    Driver driver;
+                    while (fin.read((char*)&driver, sizeof(Driver)))
+                    {
+                        driver.Get_info();
+                        cout << "---------------------------------" << endl;
+                    }
+                    
+                }
+                fin.close();
+                //cout << "Фаил открыт" << endl;
 
-                //ifstream fin_driver("driver.txt");
-                fin.open(path_driver, ios::in);
+                cout << endl;
+                cout << "             Security" << endl;
+                cout << "---------------------------------" << endl;
+                fin.open(path_security);
                 if (!fin.is_open())
                 {
                     cout << "Ошибка открытия файла" << endl;
@@ -439,51 +458,31 @@ int main()
                 else
                 {
                     //cout << "Фаил открыт" << endl;
-                    Driver driver;
-                    while (fin.read((char*)&driver, sizeof(Driver)))
+                    Security security;
+                    while (fin.read((char*)&security, sizeof(Security)))
                     {
-                        driver.Get_info();
+                        security.Get_info();
                         cout << "---------------------------------" << endl;
                     }
-                    cout << endl;
-                    cout << "Security" << endl;
-                    cout << "---------------------------------" << endl;
+                }
+                fin.close();
 
-                    fin.open(path_security, ofstream::app);
-                    if (!fin.is_open())
+                cout << endl;
+                cout << "            Cleaners" << endl;
+                cout << "---------------------------------" << endl;
+                fin.open(path_cleaner);
+                if (!fin.is_open())
+                {
+                    cout << "Ошибка открытия файла" << endl;
+                }
+                else
+                {
+                    //cout << "Фаил открыт" << endl;
+                    Cleaner cleaner;
+                    while (fin.read((char*)&cleaner, sizeof(Cleaner)))
                     {
-                        cout << "Ошибка открытия файла" << endl;
-                    }
-                    else
-                    {
-                        //cout << "Фаил открыт" << endl;
-                        Security security;
-                        while (fin.read((char*)&security, sizeof(Security)))
-                        {
-                            security.Get_info();
-                            cout << "---------------------------------" << endl;
-                        }
-                    }
-                    //fin.close();
-
-                    cout << endl;
-                    cout << "Cleaners" << endl;
-                    cout << "---------------------------------" << endl;
-                    fin.open(path_cleaner, ofstream::app);
-                    fin.open(path_cleaner);
-                    if (!fin.is_open())
-                    {
-                        cout << "Ошибка открытия файла" << endl;
-                    }
-                    else
-                    {
-                        //cout << "Фаил открыт" << endl;
-                        Cleaner cleaner;
-                        while (fin.read((char*)&cleaner, sizeof(Cleaner)))
-                        {
-                            cleaner.Get_info();
-                            cout << "---------------------------------" << endl;
-                        }
+                        cleaner.Get_info();
+                        cout << "---------------------------------" << endl;
                     }
                 }
                 fin.close();
@@ -535,9 +534,9 @@ int main()
                 break;
                 
             }
-            case 4:
+            case 4: //выйти
             {
-                //выйти
+                
                 cout << " Назад\n";
                 break;
             }
