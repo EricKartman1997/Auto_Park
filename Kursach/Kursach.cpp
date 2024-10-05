@@ -41,9 +41,9 @@ int main()
         cin >> choise;
         switch (choise)
         {
-        case 1:
+        case 1: // Работники
         {
-            cout << "Создать - 1 Уволить - 2 Просмотреть картотеку - 3 Назад - 4 " << endl;
+            cout << "Создать - 1 Уволить - 2 Просмотреть картотеку - 3 Функции - 4 Назад - 5" << endl;
             cin >> choise;
             switch (choise)
             {
@@ -346,10 +346,14 @@ int main()
                 break;
                 
             }
-            case 4: //выйти
+            case 4: //функции
             {
                 
                 cout << " Назад\n";
+                break;
+            }
+            case 5: //выйти
+            {
                 break;
             }
             default:

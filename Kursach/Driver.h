@@ -2,11 +2,11 @@
 #include "Employee.h"
 class Driver : Employee
 {
-public:
+private: 
     int Experience;
     float Kilometrage;
 
-
+public:
     Driver(const string& name, const string& surname, const string& patronymic,
         const string& gender, const int& day, const int& month, const int& year,
         int age, int opening_hours, string phone_namber, float salary,
@@ -23,23 +23,25 @@ public:
     void Plus_Kilometrage(float num)
     {
         Kilometrage += num;
-        cout << "У водителя " << Surname << Name << Patronymic << " прибавлено " << num << " киллометров" << endl;
+        cout << "У водителя " << GetSurname() << GetName() << GetPatronymic() << " прибавлено " << num << " киллометров" << endl;
     }
     void Get_info()
     {
-        cout << "Имя: " << Name << endl;
-        cout << "Фамилия: " << Surname << endl;
-        cout << "Отчество: " << Patronymic << endl;
-        cout << "Пол: " << Gender << endl;
-        cout << "Дата Рождения: " << Day << "." << Month << "." << Year << endl;
-        cout << "Возраст: " << Age << endl;
-        cout << "Часы работы: " << Opening_hours << endl;
-        cout << "Номер телефона: " << Phone_namber << endl;
-        cout << "Зарплата: " << Salary << endl;
-        cout << "Наличные: " << Money << endl;
+        cout << "Имя: " << GetName() << endl;
+        cout << "Фамилия: " << GetSurname() << endl;
+        cout << "Отчество: " << GetPatronymic() << endl;
+        cout << "Пол: " << GetGender() << endl;
+        cout << "Дата Рождения: " << GetDay() << "." << GetMonth() << "." << GetYear() << endl;
+        cout << "Возраст: " << GetAge() << endl;
+        cout << "Часы работы: " << GetOpening_hours() << endl;
+        cout << "Номер телефона: " << GetPhone_namber() << endl;
+        cout << "Зарплата: " << GetSalary() << endl;
+        cout << "Наличные: " << GetMoney() << endl;
         cout << "Стаж вождения: " << Experience << endl;
         cout << "Пройдено киллометров: " << Kilometrage << endl;
     }
+    int GetExperience() const { return Experience; }
+    float GetKilometrage() const { return Kilometrage; }
 
 };
 

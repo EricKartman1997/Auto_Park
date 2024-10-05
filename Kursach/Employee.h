@@ -1,17 +1,11 @@
-#include <iostream>
-#include "string"
 using namespace std;
 #pragma once
 class Employee
 {
-protected:
-    string Name;
-    string Surname;
-    string Patronymic;
-    string Gender;
-    int Day;
-    int Month;
-    int Year;
+private:
+    string Name, Surname, Patronymic, Gender, Phone_namber;
+    int Day, Month, Year, Age, Opening_hours;
+    float Salary, Money;
 
     void Retire()
     {
@@ -20,11 +14,6 @@ protected:
     }
 
 public:
-    int Age;
-    int Opening_hours;
-    string Phone_namber;
-    float Salary;
-    float Money;
 
     Employee(const string& name, const string& surname, const string& patronymic,
         const string& gender, const int& day, const int& month, const int& year,
@@ -61,6 +50,18 @@ public:
         cout << "Зарплата: " << Salary << endl;
         cout << "Наличные: " << Money << endl;
     }
+    string GetName() const { return Name; }
+    string GetSurname() const { return Surname; }
+    string GetPatronymic() const { return Patronymic; }
+    string GetGender() const { return Gender; }
+    string GetPhone_namber() const { return Phone_namber; }
+    int GetDay() const { return Day; }
+    int GetMonth() const { return Month; }
+    int GetYear() const { return Year; }
+    int GetAge() const { return Age; }
+    int GetOpening_hours() const { return Opening_hours; }
+    float GetSalary() const { return Salary; }
+    float GetMoney() const { return Money; }
 
 
 };

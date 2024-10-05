@@ -2,9 +2,11 @@
 #include "Employee.h"
 class Cleaner : Employee
 {
-public:
+private:
     int Clear_room;
     int Eaten_donuts;
+
+public:
 
     Cleaner(const string& name, const string& surname, const string& patronymic,
         const string& gender, const int& day, const int& month, const int& year,
@@ -21,22 +23,24 @@ public:
     void Eat_donut(int num)
     {
         Eaten_donuts += num;
-        cout << "Уборщик " << Surname << Name << Patronymic << " съел " << num << " пончика" << endl;
+        cout << "Уборщик " << GetSurname() << GetName() << GetPatronymic() << " съел " << num << " пончика" << endl;
     }
     void Get_info()
     {
-        cout << "Имя: " << Name << endl;
-        cout << "Фамилия: " << Surname << endl;
-        cout << "Отчество: " << Patronymic << endl;
-        cout << "Пол: " << Gender << endl;
-        cout << "Дата Рождения: " << Day << "." << Month << "." << Year << endl;
-        cout << "Возраст: " << Age << endl;
-        cout << "Часы работы: " << Opening_hours << endl;
-        cout << "Номер телефона: " << Phone_namber << endl;
-        cout << "Зарплата: " << Salary << endl;
-        cout << "Наличные: " << Money << endl;
+        cout << "Имя: " << GetName() << endl;
+        cout << "Фамилия: " << GetSurname() << endl;
+        cout << "Отчество: " << GetPatronymic() << endl;
+        cout << "Пол: " << GetGender() << endl;
+        cout << "Дата Рождения: " << GetDay() << "." << GetMonth() << "." << GetYear() << endl;
+        cout << "Возраст: " << GetAge() << endl;
+        cout << "Часы работы: " << GetOpening_hours() << endl;
+        cout << "Номер телефона: " << GetPhone_namber() << endl;
+        cout << "Зарплата: " << GetSalary() << endl;
+        cout << "Наличные: " << GetMoney() << endl;
         cout << "Вымыто комнат: " << Clear_room << endl;
         cout << "Съедено пончиков: " << Eaten_donuts << endl;
     }
+    int GetClear_room() const { return Clear_room; }
+    int GetEaten_donuts() const { return Eaten_donuts; }
 };
 

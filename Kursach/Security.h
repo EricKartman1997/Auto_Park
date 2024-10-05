@@ -2,9 +2,11 @@
 #include "Employee.h"
 class Security : Employee
 {
-public:
+private: 
     int Verified_person;
     int Coffe_drink;
+
+public:
 
     Security(const string& name, const string& surname, const string& patronymic,
         const string& gender, const int& day, const int& month, const int& year,
@@ -21,22 +23,24 @@ public:
     void Drink_coffe(int num)
     {
         Coffe_drink += num;
-        cout << "Охраник " << Surname << Name << Patronymic << " выпил " << num << " чашки коффе" << endl;
+        cout << "Охраник " << GetSurname() << GetName() << GetPatronymic() << " выпил " << num << " чашки коффе" << endl;
     }
     void Get_info()
     {
-        cout << "Имя: " << Name << endl;
-        cout << "Фамилия: " << Surname << endl;
-        cout << "Отчество: " << Patronymic << endl;
-        cout << "Пол: " << Gender << endl;
-        cout << "Дата Рождения: " << Day << "." << Month << "." << Year << endl;
-        cout << "Возраст: " << Age << endl;
-        cout << "Часы работы: " << Opening_hours << endl;
-        cout << "Номер телефона: " << Phone_namber << endl;
-        cout << "Зарплата: " << Salary << endl;
-        cout << "Наличные: " << Money << endl;
+        cout << "Имя: " << GetName() << endl;
+        cout << "Фамилия: " << GetSurname() << endl;
+        cout << "Отчество: " << GetPatronymic() << endl;
+        cout << "Пол: " << GetGender() << endl;
+        cout << "Дата Рождения: " << GetDay() << "." << GetMonth() << "." << GetYear() << endl;
+        cout << "Возраст: " << GetAge() << endl;
+        cout << "Часы работы: " << GetOpening_hours() << endl;
+        cout << "Номер телефона: " << GetPhone_namber() << endl;
+        cout << "Зарплата: " << GetSalary() << endl;
+        cout << "Наличные: " << GetMoney() << endl;
         cout << "Проверенно человек: " << Verified_person << endl;
         cout << "Выпито коффе: " << Coffe_drink << endl;
     }
+    int GetVerified_person() const { return Verified_person; }
+    int GetCoffe_drink() const { return Coffe_drink; }
 };
 
