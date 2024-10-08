@@ -131,6 +131,7 @@
     <ClCompile Include="Cleaner.cpp" />
     <ClCompile Include="Driver.cpp" />
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="Function.cpp" />
     <ClCompile Include="Kursach.cpp" />
     <ClCompile Include="Security.cpp" />
   </ItemGroup>
@@ -139,7 +140,12 @@
     <ClInclude Include="Cleaner.h" />
     <ClInclude Include="Driver.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Security.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Kursach.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

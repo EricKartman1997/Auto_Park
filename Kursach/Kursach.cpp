@@ -1,15 +1,16 @@
-﻿
-#include <iostream>
-#include "string"
-#include "fstream"
+﻿#include <iostream>
+#include <string>
+//#include "fstream"
 #include "Employee.h"
 #include "Driver.h"
 #include "Security.h"
 #include "Cleaner.h"
+#include "Function.h"
 using namespace std;
 
 int choise;
-ofstream fout;
+//ofstream fout;
+
 
 
 
@@ -93,7 +94,8 @@ int main()
                     newDriver.Get_info();
                     cout << endl;
                     system("pause");
-
+                    record(path_driver, newDriver);
+                    /*
                     fout.open(path_driver, ofstream::app);
                     if (!fout.is_open())
                     {
@@ -105,6 +107,7 @@ int main()
                         fout.write((char*)&newDriver, sizeof(Driver));
                     }
                     fout.close();
+                    */
                     break;
                 }
                 case 2: //создать охраника
@@ -134,7 +137,6 @@ int main()
                     cin >> salary;
                     cout << "Введите наличные: " << endl;
                     cin >> money;
-                    cout << endl;
                     cout << "Введите сколько человек проверил охраник за сегодня: " << endl;
                     cin >> verified_person;
                     cout << "Введите колличество выпитых коффе за сегодня: " << endl;
@@ -147,18 +149,7 @@ int main()
                     newSecurity.Get_info();
                     system("pause");
 
-                    
-                    fout.open(path_security, ofstream::app);
-                    if (!fout.is_open())
-                    {
-                        cout << "Ошибка открытия файла" << endl;
-                    }
-                    else
-                    {
-                        cout << "Фаил открыт" << endl;
-                        fout.write((char*)&newSecurity, sizeof(Security));
-                    }
-                    fout.close();
+                    record(path_security,newSecurity);
                     break;
                 }
                 case 3: //создать уборщика
@@ -201,17 +192,7 @@ int main()
                     cout << endl;
                     system("pause");
 
-                    fout.open(path_cleaner, ofstream::app);
-                    if (!fout.is_open())
-                    {
-                        cout << "Ошибка открытия файла" << endl;
-                    }
-                    else
-                    {
-                        //cout << "Фаил открыт" << endl;
-                        fout.write((char*)&newCleaner, sizeof(Cleaner));
-                    }
-                    fout.close();
+                    record(path_cleaner,newCleaner);
                     break;
                 }
                 case 4://Назад
@@ -237,111 +218,24 @@ int main()
             }
             case 3: //просмотр
             {
-                ifstream fin;
                 cout << "             Drivers" << endl;
                 cout << "---------------------------------" << endl;
-                fin.open(path_driver);
-                
-                if (!fin.is_open())
-                {
-                    cout << "Ошибка открытия файла" << endl;
-                }
-                else
-                {
-                    Driver driver;
-                    while (fin.read((char*)&driver, sizeof(Driver)))
-                    {
-                        driver.Get_info();
-                        cout << "---------------------------------" << endl;
-                    }
-                    
-                }
-                fin.close();
+                Driver driver;
+                reading(path_driver, driver);
                 //cout << "Фаил открыт" << endl;
 
                 cout << endl;
                 cout << "             Security" << endl;
                 cout << "---------------------------------" << endl;
-                fin.open(path_security);
-                if (!fin.is_open())
-                {
-                    cout << "Ошибка открытия файла" << endl;
-                }
-                else
-                {
-                    //cout << "Фаил открыт" << endl;
-                    Security security;
-                    while (fin.read((char*)&security, sizeof(Security)))
-                    {
-                        security.Get_info();
-                        cout << "---------------------------------" << endl;
-                    }
-                }
-                fin.close();
-
+                Security security;
+                reading(path_security,security);
+                
                 cout << endl;
                 cout << "            Cleaners" << endl;
                 cout << "---------------------------------" << endl;
-                fin.open(path_cleaner);
-                if (!fin.is_open())
-                {
-                    cout << "Ошибка открытия файла" << endl;
-                }
-                else
-                {
-                    //cout << "Фаил открыт" << endl;
-                    Cleaner cleaner;
-                    while (fin.read((char*)&cleaner, sizeof(Cleaner)))
-                    {
-                        cleaner.Get_info();
-                        cout << "---------------------------------" << endl;
-                    }
-                }
-                fin.close();
-                //cout << "фаил закрыт" << endl;
-                /*
-                cout << endl;
-                cout << "Security" << endl;
-                cout << "---------------------------------" << endl;
+                Cleaner cleaner;
+                reading(path_cleaner,cleaner);
                 
-                fin.open(path_security, ofstream::app);
-                if (!fin.is_open())
-                {
-                    cout << "Ошибка открытия файла" << endl;
-                }
-                else
-                {
-                    //cout << "Фаил открыт" << endl;
-                    Security security;
-                    while (fin.read((char*)&security, sizeof(Security)))
-                    {
-                        security.Get_info();
-                        cout << "---------------------------------" << endl;
-                    }
-                }
-                fin.close();
-
-                cout << endl;
-                cout << "Cleaners" << endl;
-                cout << "---------------------------------" << endl;
-                fin.open(path_cleaner, ofstream::app);
-                fin.open(path_cleaner);
-                if (!fin.is_open())
-                {
-                    cout << "Ошибка открытия файла" << endl;
-                }
-                else
-                {
-                    //cout << "Фаил открыт" << endl;
-                    Cleaner cleaner;
-                    while (fin.read((char*)&cleaner, sizeof(Cleaner)))
-                    {
-                        cleaner.Get_info();
-                        cout << "---------------------------------" << endl;
-                    }
-                }
-                fin.close();
-                */
                 system("pause");
                 break;
                 

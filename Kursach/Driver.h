@@ -16,6 +16,8 @@ public:
 
     Driver()
     {
+        Experience = 0;
+        Kilometrage = 0;
 
     }
 

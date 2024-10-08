@@ -1,0 +1,1462 @@
+﻿  Bus.cpp
+  Cleaner.cpp
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,12): error C3646: Name: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,16): error C2059: синтаксическая ошибка: ,
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,60): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,14): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,26): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,12): error C3646: GetName: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,19): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,28): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,12): error C3646: GetSurname: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,22): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,31): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,12): error C3646: GetPatronymic: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,25): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,34): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,12): error C3646: GetGender: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,21): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,30): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,12): error C3646: GetPhone_namber: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,27): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,36): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,41): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,56): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,74): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,109): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,28): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,43): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,64): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,84): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,97): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,109): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,122): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,133): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,153): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,182): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,204): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,219): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,23): error C2614: Employee: недопустимая инициализация члена: "Name" не является базовым классом или членом
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,35): error C2614: Employee: недопустимая инициализация члена: "Surname" не является базовым классом или членом
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,53): error C2614: Employee: недопустимая инициализация члена: "Patronymic" не является базовым классом или членом
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,77): error C2614: Employee: недопустимая инициализация члена: "Gender" не является базовым классом или членом
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,169): error C2614: Employee: недопустимая инициализация члена: "Phone_namber" не является базовым классом или членом
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,70): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,31): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,39): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,39): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,41): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,31): error C2065: Gender: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,41): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,88): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,63): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,52): error C2065: Phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,68): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,51): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(11,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(11,25): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,20): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,26): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,35): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,47): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,55): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,60): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,67): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,73): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,78): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,93): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,107): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(15,115): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(16,20): error C2065: clear_room: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(16,46): error C2065: eaten_donuts: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(26,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(26,38): error C3861: GetSurname: идентификатор не найден
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(26,54): error C3861: GetName: идентификатор не найден
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(26,67): error C3861: GetPatronymic: идентификатор не найден
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(26,130): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(30,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(30,31): error C3861: GetName: идентификатор не найден
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(30,44): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(31,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(31,39): error C3861: GetSurname: идентификатор не найден
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(31,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(32,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(32,41): error C3861: GetPatronymic: идентификатор не найден
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(32,60): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(33,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(33,31): error C3861: GetGender: идентификатор не найден
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(33,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(34,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Cleaner.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Cleaner.h(34,9): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "Cleaner.cpp")
+  
+  Driver.cpp
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,12): error C3646: Name: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,16): error C2059: синтаксическая ошибка: ,
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,60): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,14): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,26): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,12): error C3646: GetName: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,19): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,28): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,12): error C3646: GetSurname: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,22): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,31): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,12): error C3646: GetPatronymic: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,25): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,34): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,12): error C3646: GetGender: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,21): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,30): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,12): error C3646: GetPhone_namber: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,27): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,36): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,41): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,56): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,74): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,109): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,28): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,43): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,64): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,84): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,97): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,109): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,122): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,133): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,153): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,182): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,204): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,219): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,23): error C2614: Employee: недопустимая инициализация члена: "Name" не является базовым классом или членом
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,35): error C2614: Employee: недопустимая инициализация члена: "Surname" не является базовым классом или членом
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,53): error C2614: Employee: недопустимая инициализация члена: "Patronymic" не является базовым классом или членом
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,77): error C2614: Employee: недопустимая инициализация члена: "Gender" не является базовым классом или членом
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,169): error C2614: Employee: недопустимая инициализация члена: "Phone_namber" не является базовым классом или членом
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,70): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,31): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,39): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,39): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,41): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,31): error C2065: Gender: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,41): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,88): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,63): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,52): error C2065: Phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,68): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,51): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(10,12): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(10,24): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,20): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,26): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,35): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,47): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,55): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,60): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,67): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,73): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,78): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,93): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,107): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,115): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(15,20): error C2065: experience: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(15,45): error C2065: kilometrage: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,43): error C3861: GetSurname: идентификатор не найден
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,59): error C3861: GetName: идентификатор не найден
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,72): error C3861: GetPatronymic: идентификатор не найден
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,155): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(30,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(30,31): error C3861: GetName: идентификатор не найден
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(30,44): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(31,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(31,39): error C3861: GetSurname: идентификатор не найден
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(31,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(32,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(32,41): error C3861: GetPatronymic: идентификатор не найден
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(32,60): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(33,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(33,31): error C3861: GetGender: идентификатор не найден
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(33,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(34,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Driver.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(34,9): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "Driver.cpp")
+  
+  Employee.cpp
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,12): error C3646: Name: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,16): error C2059: синтаксическая ошибка: ,
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,60): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,14): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,26): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,12): error C3646: GetName: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,19): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,28): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,12): error C3646: GetSurname: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,22): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,31): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,12): error C3646: GetPatronymic: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,25): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,34): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,12): error C3646: GetGender: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,21): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,30): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,12): error C3646: GetPhone_namber: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,27): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,36): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,41): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,56): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,74): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,109): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,28): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,43): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,64): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,84): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,97): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,109): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,122): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,133): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,153): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,182): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,204): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,219): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,23): error C2614: Employee: недопустимая инициализация члена: "Name" не является базовым классом или членом
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,35): error C2614: Employee: недопустимая инициализация члена: "Surname" не является базовым классом или членом
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,53): error C2614: Employee: недопустимая инициализация члена: "Patronymic" не является базовым классом или членом
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,77): error C2614: Employee: недопустимая инициализация члена: "Gender" не является базовым классом или членом
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,169): error C2614: Employee: недопустимая инициализация члена: "Phone_namber" не является базовым классом или членом
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,70): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,31): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,39): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,39): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,41): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,31): error C2065: Gender: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,41): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,88): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,63): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,52): error C2065: Phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,68): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,51): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Employee.cpp")
+  
+  Kursach.cpp
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,12): error C3646: Name: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,16): error C2059: синтаксическая ошибка: ,
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,60): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,14): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,26): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,12): error C3646: GetName: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,19): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,28): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,12): error C3646: GetSurname: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,22): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,31): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,12): error C3646: GetPatronymic: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,25): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,34): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,12): error C3646: GetGender: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,21): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,30): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,12): error C3646: GetPhone_namber: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,27): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,36): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,41): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,56): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,74): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,109): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,28): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,43): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,64): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,84): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,97): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,109): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,122): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,133): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,153): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,182): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,204): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,219): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,23): error C2614: Employee: недопустимая инициализация члена: "Name" не является базовым классом или членом
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,35): error C2614: Employee: недопустимая инициализация члена: "Surname" не является базовым классом или членом
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,53): error C2614: Employee: недопустимая инициализация члена: "Patronymic" не является базовым классом или членом
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,77): error C2614: Employee: недопустимая инициализация члена: "Gender" не является базовым классом или членом
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,169): error C2614: Employee: недопустимая инициализация члена: "Phone_namber" не является базовым классом или членом
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,70): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,31): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,39): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,39): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,41): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,31): error C2065: Gender: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,41): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,88): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,63): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,52): error C2065: Phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,68): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,51): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(10,12): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(10,24): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,20): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,26): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,35): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,47): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,55): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,60): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,67): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,73): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,78): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,93): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,107): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(14,115): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(15,20): error C2065: experience: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(15,45): error C2065: kilometrage: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,43): error C3861: GetSurname: идентификатор не найден
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,59): error C3861: GetName: идентификатор не найден
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,72): error C3861: GetPatronymic: идентификатор не найден
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(26,155): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(30,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(30,31): error C3861: GetName: идентификатор не найден
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(30,44): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(31,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(31,39): error C3861: GetSurname: идентификатор не найден
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(31,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(32,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(32,41): error C3861: GetPatronymic: идентификатор не найден
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(32,60): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(33,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(33,31): error C3861: GetGender: идентификатор не найден
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(33,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(34,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Kursach.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Driver.h(34,9): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "Kursach.cpp")
+  
+  Psql.cpp
+  Security.cpp
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,12): error C3646: Name: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,16): error C2059: синтаксическая ошибка: ,
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(6,60): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,14): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(18,26): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,12): error C3646: GetName: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,19): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(53,28): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,12): error C3646: GetSurname: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,22): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(54,31): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,12): error C3646: GetPatronymic: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,25): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(55,34): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,12): error C3646: GetGender: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,21): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(56,30): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,12): error C3646: GetPhone_namber: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,27): error C2059: синтаксическая ошибка: (
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(57,36): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,41): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,56): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,74): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(12,109): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,28): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,43): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,64): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,84): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,97): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,109): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,122): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,133): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,153): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,182): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,204): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,219): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,23): error C2614: Employee: недопустимая инициализация члена: "Name" не является базовым классом или членом
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,35): error C2614: Employee: недопустимая инициализация члена: "Surname" не является базовым классом или членом
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,53): error C2614: Employee: недопустимая инициализация члена: "Patronymic" не является базовым классом или членом
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,77): error C2614: Employee: недопустимая инициализация члена: "Gender" не является базовым классом или членом
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(21,169): error C2614: Employee: недопустимая инициализация члена: "Phone_namber" не является базовым классом или членом
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(37,70): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,31): error C2065: Name: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(42,39): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,39): error C2065: Surname: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(43,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,41): error C2065: Patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(44,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,31): error C2065: Gender: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(45,41): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(46,88): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(47,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(48,63): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,52): error C2065: Phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(49,68): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(50,51): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Employee.h(51,50): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(11,14): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(11,26): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,20): error C2065: name: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,26): error C2065: surname: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,35): error C2065: patronymic: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,47): error C2065: gender: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,55): error C2065: day: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,60): error C2065: month: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,67): error C2065: year: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,73): error C2065: age: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,78): error C2065: opening_hours: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,93): error C2065: phone_namber: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,107): error C2065: salary: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(15,115): error C2065: money: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(16,25): error C2065: verified_person: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(16,55): error C2065: coffe_drink: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(26,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(26,38): error C3861: GetSurname: идентификатор не найден
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(26,54): error C3861: GetName: идентификатор не найден
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(26,67): error C3861: GetPatronymic: идентификатор не найден
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(26,139): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(30,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(30,31): error C3861: GetName: идентификатор не найден
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(30,44): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(31,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(31,39): error C3861: GetSurname: идентификатор не найден
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(31,55): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(32,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(32,41): error C3861: GetPatronymic: идентификатор не найден
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(32,60): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(33,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(33,31): error C3861: GetGender: идентификатор не найден
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(33,46): error C2065: endl: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(34,9): error C2065: cout: необъявленный идентификатор
+  (компиляция исходного файла "Security.cpp")
+  
+C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Security.h(34,9): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "Security.cpp")
+  

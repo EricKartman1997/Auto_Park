@@ -1,5 +1,7 @@
-using namespace std;
 #pragma once
+#include <iostream>
+#include <string>
+using namespace std;
 class Employee
 {
 private:
@@ -22,7 +24,18 @@ public:
 
     Employee()
     {
-
+        Name = "0";
+        Surname = "0";
+        Patronymic = "0";
+        Gender = "0";
+        Phone_namber = "0";
+        Day = 0;
+        Month = 0;
+        Year = 0;
+        Age = 0;
+        Opening_hours = 0;
+        Salary = 0;
+        Money = 0;
     }
 
 
