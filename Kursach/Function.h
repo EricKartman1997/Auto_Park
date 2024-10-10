@@ -18,6 +18,9 @@ void saveDriverToFile(const Driver& driver);
 void saveSecurityToFile(const Security& security);
 void saveCleanerToFile(const Cleaner& cleaner);
 void readDriversFromFile();
+void readSecuritiesFromFile();
+void readCleanersFromFile();
+void print_centered(const string& text);
 
 
 

@@ -275,3 +275,123 @@ void readDriversFromFile()
         cout << "Ошибка открытия файла для чтения!" << endl;
     }
 }
+void readSecuritiesFromFile()
+{
+    int count = 0;
+    string fail_path = "security.txt";
+    ifstream infile(fail_path);
+
+    if (infile.is_open())
+    {
+        string name1;
+        string name, surname, patronymic, phone_number, gender;
+        int day, month, year, age, verified_person, opening_hours, coffe_drink;
+        float salary, money;
+
+
+        // Считываем количество записей
+        while (getline(infile, name1))
+        {
+            count++;
+        }
+        infile.close();
+
+
+        ifstream infile(fail_path);
+        count = count / 14;
+        // Считываем данные и создаем объекты
+
+        while (getline(infile, name)) // string
+        {
+
+            if (infile.good()) { // Проверка на успешное чтение
+                getline(infile, surname); // string
+                getline(infile, patronymic);// string
+                getline(infile, gender);// string
+                infile >> day >> month >> year >> age >> opening_hours;
+                infile.ignore();
+                getline(infile, phone_number);// string
+                infile >> salary >> money >> verified_person >> coffe_drink;
+                infile.ignore();
+
+                Security security(name, surname, patronymic, gender, day, month, year, age, opening_hours, phone_number, salary, money, verified_person, coffe_drink);
+                security.Get_info();
+                cout << "---------------------------------" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+    }
+    else {
+        cout << "Ошибка открытия файла для чтения!" << endl;
+    }
+}
+void readCleanersFromFile()
+{
+    int count = 0;
+    string fail_path = "cleaner.txt";
+    ifstream infile(fail_path);
+
+    if (infile.is_open())
+    {
+        string name1;
+        string name, surname, patronymic, phone_number, gender;
+        int day, month, year, age, clear_room, opening_hours, eaten_donuts;
+        float salary, money;
+
+
+        // Считываем количество записей
+        while (getline(infile, name1))
+        {
+            count++;
+        }
+        infile.close();
+
+
+        ifstream infile(fail_path);
+        count = count / 14;
+        // Считываем данные и создаем объекты
+
+        while (getline(infile, name)) // string
+        {
+
+            if (infile.good()) { // Проверка на успешное чтение
+                getline(infile, surname); // string
+                getline(infile, patronymic);// string
+                getline(infile, gender);// string
+                infile >> day >> month >> year >> age >> opening_hours;
+                infile.ignore();
+                getline(infile, phone_number);// string
+                infile >> salary >> money >> clear_room >> eaten_donuts;
+                infile.ignore();
+
+                Cleaner cleaner(name, surname, patronymic, gender, day, month, year, age, opening_hours, phone_number, salary, money, clear_room, eaten_donuts);
+                cleaner.Get_info();
+                cout << "---------------------------------" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+    }
+    else {
+        cout << "Ошибка открытия файла для чтения!" << endl;
+    }
+}
+//выводит текс по середине экрана
+void print_centered(const string& text) {
+    // Получаем ширину терминала
+    int terminal_width = 120; // Замените на функцию получения ширины терминала
+
+
+    // Вычисляем количество пробелов для центрирования
+    int padding = (terminal_width - text.length()) / 2;
+
+    // Выводим текст с отступом
+    cout << string(padding, ' ') << text << endl;
+}
