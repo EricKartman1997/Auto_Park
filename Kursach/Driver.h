@@ -1,6 +1,6 @@
 #pragma once
 #include "Employee.h"
-class Driver : Employee
+class Driver : public Employee
 {
 private: 
     int Experience;

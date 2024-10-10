@@ -3,39 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\__msvc_string_view.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Function.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Function.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Kursach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Kursach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Function.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Function.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Security.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Security.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Kursach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Kursach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Cleaner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Cleaner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Bus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Bus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Driver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Driver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Bus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Bus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Cleaner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Cleaner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Security.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8FE8EE51-BFCA-4A99-8C14-FA9DD1772C17}|Kursach\\Kursach.vcxproj|solutionrelative:Kursach\\Security.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,13 +46,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Function.h",
               "DocumentMoniker": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Function.h",
               "RelativeDocumentMoniker": "Kursach\\Function.h",
               "ToolTip": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Function.h",
               "RelativeToolTip": "Kursach\\Function.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-07T17:10:04.041Z",
               "IsPinned": true,
@@ -64,41 +61,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "__msvc_string_view.hpp",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\__msvc_string_view.hpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\__msvc_string_view.hpp",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\__msvc_string_view.hpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\__msvc_string_view.hpp",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAcwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-08T13:56:18.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Function.cpp",
               "DocumentMoniker": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Function.cpp",
               "RelativeDocumentMoniker": "Kursach\\Function.cpp",
-              "ToolTip": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Function.cpp",
-              "RelativeToolTip": "Kursach\\Function.cpp",
-              "ViewState": "AgIAADUAAAAAAAAAAAAQwBEAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Function.cpp*",
+              "RelativeToolTip": "Kursach\\Function.cpp*",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAAAAABAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-07T17:17:06.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Security.h",
               "DocumentMoniker": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Security.h",
               "RelativeDocumentMoniker": "Kursach\\Security.h",
               "ToolTip": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Security.h",
               "RelativeToolTip": "Kursach\\Security.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-05T15:20:07.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T15:20:07.763Z"
             },
             {
               "$type": "Document",
@@ -108,40 +91,37 @@
               "RelativeDocumentMoniker": "Kursach\\Cleaner.h",
               "ToolTip": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Cleaner.h",
               "RelativeToolTip": "Kursach\\Cleaner.h",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-05T15:21:16.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T15:21:16.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Driver.h",
               "DocumentMoniker": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Driver.h",
               "RelativeDocumentMoniker": "Kursach\\Driver.h",
               "ToolTip": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Driver.h",
               "RelativeToolTip": "Kursach\\Driver.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-05T15:18:01.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T15:18:01.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Employee.h",
               "DocumentMoniker": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Employee.h",
               "RelativeDocumentMoniker": "Kursach\\Employee.h",
               "ToolTip": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Employee.h",
               "RelativeToolTip": "Kursach\\Employee.h",
-              "ViewState": "AgIAADoAAAAAAAAAAAAuwEcAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-05T15:13:41.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T15:13:41.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Bus.h",
               "DocumentMoniker": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Bus.h",
               "RelativeDocumentMoniker": "Kursach\\Bus.h",
@@ -149,8 +129,7 @@
               "RelativeToolTip": "Kursach\\Bus.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-05T15:12:35.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T15:12:35.944Z"
             },
             {
               "$type": "Document",
@@ -160,7 +139,7 @@
               "RelativeDocumentMoniker": "Kursach\\Kursach.cpp",
               "ToolTip": "C:\\Users\\mxalk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\repos\\Kursach\\Kursach\\Kursach.cpp",
               "RelativeToolTip": "Kursach\\Kursach.cpp",
-              "ViewState": "AgIAANcAAAAAAAAAAAAwwO4AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAAAOUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-02T10:38:39.658Z",
               "EditorCaption": ""

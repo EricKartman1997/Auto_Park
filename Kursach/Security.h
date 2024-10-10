@@ -1,6 +1,6 @@
 #pragma once
 #include "Employee.h"
-class Security : Employee
+class Security : public Employee
 {
 private: 
     int Verified_person;

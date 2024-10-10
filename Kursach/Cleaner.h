@@ -1,6 +1,6 @@
 #pragma once
 #include "Employee.h"
-class Cleaner : Employee
+class Cleaner : public Employee
 {
 private:
     int Clear_room;

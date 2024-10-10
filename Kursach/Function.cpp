@@ -132,3 +132,146 @@ void reading(string path, Cleaner& newCleaner)
     fin.close();
     
 }
+// Метод записи данных в файл
+void saveDriverToFile(const Driver& driver) 
+{
+    string path_driver = "driver.txt";
+    ofstream outfile(path_driver, ios::app); // Открываем файл в режиме добавления
+
+    if (outfile.is_open()) 
+    {
+        outfile << driver.GetName() << endl;
+        outfile << driver.GetSurname() << endl;
+        outfile << driver.GetPatronymic() << endl;
+        outfile << driver.GetGender() << endl;
+        outfile << driver.GetDay() << endl;
+        outfile << driver.GetMonth() << endl;
+        outfile << driver.GetYear() << endl;
+        outfile << driver.GetAge() << endl;
+        outfile << driver.GetOpening_hours() << endl;
+        outfile << driver.GetPhone_namber() << endl;
+        outfile << driver.GetSalary() << endl;
+        outfile << driver.GetMoney() << endl;
+        outfile << driver.GetExperience() << endl;
+        outfile << driver.GetKilometrage() << endl;
+        outfile.close();
+        cout << "фаил записан" << endl;
+    }
+    else 
+    {
+        cout << "Ошибка открытия файла для записи!" << endl;
+    }
+}
+void saveSecurityToFile(const Security& security)
+{
+    string path_security = "security.txt";
+    ofstream outfile(path_security, ios::app); // Открываем файл в режиме добавления
+
+    if (outfile.is_open())
+    {
+        outfile << security.GetName() << endl;
+        outfile << security.GetSurname() << endl;
+        outfile << security.GetPatronymic() << endl;
+        outfile << security.GetGender() << endl;
+        outfile << security.GetDay() << endl;
+        outfile << security.GetMonth() << endl;
+        outfile << security.GetYear() << endl;
+        outfile << security.GetAge() << endl;
+        outfile << security.GetOpening_hours() << endl;
+        outfile << security.GetPhone_namber() << endl;
+        outfile << security.GetSalary() << endl;
+        outfile << security.GetMoney() << endl;
+        outfile << security.GetVerified_person() << endl;
+        outfile << security.GetCoffe_drink() << endl;
+        outfile.close();
+        cout << "фаил записан" << endl;
+    }
+    else
+    {
+        cout << "Ошибка открытия файла для записи!" << endl;
+    }
+}
+void saveCleanerToFile(const Cleaner& cleaner)
+{
+    string path_cleaner = "cleaner.txt";
+    ofstream outfile(path_cleaner, ios::app); // Открываем файл в режиме добавления
+
+    if (outfile.is_open())
+    {
+        outfile << cleaner.GetName() << endl;
+        outfile << cleaner.GetSurname() << endl;
+        outfile << cleaner.GetPatronymic() << endl;
+        outfile << cleaner.GetGender() << endl;
+        outfile << cleaner.GetDay() << endl;
+        outfile << cleaner.GetMonth() << endl;
+        outfile << cleaner.GetYear() << endl;
+        outfile << cleaner.GetAge() << endl;
+        outfile << cleaner.GetOpening_hours() << endl;
+        outfile << cleaner.GetPhone_namber() << endl;
+        outfile << cleaner.GetSalary() << endl;
+        outfile << cleaner.GetMoney() << endl;
+        outfile << cleaner.GetClear_room() << endl;
+        outfile << cleaner.GetEaten_donuts() << endl;
+        outfile.close();
+        cout << "фаил записан" << endl;
+    }
+    else
+    {
+        cout << "Ошибка открытия файла для записи!" << endl;
+    }
+}
+// Метод чтения данных из файла
+void readDriversFromFile() 
+{
+    int count = 0;
+    string fail_path = "driver.txt";
+    ifstream infile(fail_path);
+
+    if (infile.is_open()) 
+    {
+        string name1;
+        string name, surname, patronymic, phone_number, gender;
+        int day, month, year, age, experience, opening_hours;
+        float salary, money, kilometrage;
+        
+
+        // Считываем количество записей
+        while (getline(infile, name1))
+        {
+            count++;
+        }
+        infile.close();
+
+
+        ifstream infile(fail_path);
+        count = count / 14;
+        // Считываем данные и создаем объекты
+        
+        while (getline(infile, name)) // string
+        {
+            
+            if (infile.good()) { // Проверка на успешное чтение
+                getline(infile, surname); // string
+                getline(infile, patronymic);// string
+                getline(infile, gender);// string
+                infile >> day >> month >> year >> age >> opening_hours;
+                infile.ignore();
+                getline(infile, phone_number);// string
+                infile >> salary >> money >> experience >> kilometrage;
+                infile.ignore();
+
+                Driver driver(name, surname, patronymic, gender, day, month, year, age, opening_hours, phone_number, salary, money, experience, kilometrage);
+                driver.Get_info();
+                cout << "---------------------------------" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+    }
+    else {
+        cout << "Ошибка открытия файла для чтения!" << endl;
+    }
+}

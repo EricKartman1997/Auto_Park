@@ -91,10 +91,13 @@ int main()
                         year, age, opening_hours, phone_namber, salary,
                         money, experience, kilometrage);
 
-                    newDriver.Get_info();
+
+                    saveDriverToFile(newDriver, path_driver);
+
                     cout << endl;
                     system("pause");
-                    record(path_driver, newDriver);
+                    newDriver.Get_info();
+                    //record(path_driver, newDriver);
                     /*
                     fout.open(path_driver, ofstream::app);
                     if (!fout.is_open())
@@ -220,10 +223,25 @@ int main()
             {
                 cout << "             Drivers" << endl;
                 cout << "---------------------------------" << endl;
-                Driver driver;
-                reading(path_driver, driver);
+                readDriversFromFile();
+                system("pause");
+                break;
+                //Driver driver;
+                //reading(path_driver, driver);
                 //cout << "Фаил открыт" << endl;
-
+                
+                // Вывод данных о прочитанных объектах
+                /*
+                cout << count << endl;
+                for (int i = 0; i < count; i++) 
+                {
+                    drivers[i].Get_info(); 
+                    cout << "---------------------------------" << endl;
+                }
+                // Освобождение памяти
+                delete[] drivers;
+                */
+                /*
                 cout << endl;
                 cout << "             Security" << endl;
                 cout << "---------------------------------" << endl;
@@ -236,8 +254,7 @@ int main()
                 Cleaner cleaner;
                 reading(path_cleaner,cleaner);
                 
-                system("pause");
-                break;
+                */
                 
             }
             case 4: //функции
