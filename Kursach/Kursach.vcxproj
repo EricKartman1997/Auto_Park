@@ -131,18 +131,24 @@
     <ClCompile Include="Cleaner.cpp" />
     <ClCompile Include="Driver.cpp" />
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="FreightBus.cpp" />
     <ClCompile Include="Function.cpp" />
     <ClCompile Include="Kursach.cpp" />
     <ClCompile Include="Security.cpp" />
+    <ClCompile Include="ShuttleBus.cpp" />
+    <ClCompile Include="TouristBus.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bus.h" />
     <ClInclude Include="Cleaner.h" />
     <ClInclude Include="Driver.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="FreightBus.h" />
     <ClInclude Include="Function.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Security.h" />
+    <ClInclude Include="ShuttleBus.h" />
+    <ClInclude Include="TouristBus.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Kursach.rc" />

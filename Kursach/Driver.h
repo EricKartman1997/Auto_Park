@@ -25,7 +25,7 @@ public:
     void Plus_Kilometrage(float num)
     {
         Kilometrage += num;
-        cout << "У водителя " << GetSurname() << GetName() << GetPatronymic() << " прибавлено " << num << " киллометров" << endl;
+        cout << "У водителя " << GetSurname()<<" " << GetName() << " " << GetPatronymic() << " прибавлено " << num << " киллометров" << endl;
     }
     void Get_info()
     {

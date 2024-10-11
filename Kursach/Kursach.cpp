@@ -1,28 +1,29 @@
 ﻿#include <iostream>
 #include <string>
-//#include "fstream"
-#include "Employee.h"
+#include <Windows.h>
 #include "Driver.h"
 #include "Security.h"
 #include "Cleaner.h"
 #include "Function.h"
-#include <Windows.h>
+#include "FreightBus.h"
+#include "TouristBus.h"
+#include "ShuttleBus.h"
 using namespace std;
 
 int choise;
-//ofstream fout;
-
-
-
+int time_variable_int, time_variable_int_2;
+float time_variable_float;
+string time_variable_string;
 
 // поля для заполнения классов Работники
 string name, surname, patronymic, gender, phone_namber;
 int day, month, year, age, opening_hours, experience, verified_person, coffe_drink, clear_room, eaten_donuts;
 float money, salary, kilometrage;
 
-string path_employee = "employee.txt";
-
 // поля для заполнения классов Автобусы
+string marka, model, purpose_shuttle, purpose, theEndPoint;
+int yearOfManufacture,travel, passengers, cargo, ticketPrice,id;
+
 string path_bus = "bus.txt";
 
 int main()
@@ -249,7 +250,7 @@ int main()
                 }
                 break;
             }
-            case 3: //просмотр
+            case 3: //просмотр работников
             {
                 system("cls");
                 cout << "             Drivers" << endl;
@@ -272,6 +273,131 @@ int main()
             case 4: //функции
             {
                 system("cls");
+                print_centered("Водитель - 1  Охраник - 2 Уборщик - 3 Вернуться назад - 4");
+                cin >> choise;
+                switch (choise)
+                {
+                case 1: // водитель
+                {
+                    print_centered("Выдать зарплату - 1  Добавить километры - 2 Вернуться назад - 3");
+                    cin >> choise;
+                    switch (choise)
+                    {
+                    case 1:// Выдать зарплату
+                    {
+                        print_centered("Введите имя водителя, которому вы хотите выдать зарплату");
+                        cin >> time_variable_string;
+                        AddSalaryDriver(time_variable_string);
+                        system("pause");
+                        break;
+                    }
+                    case 2:// Добавить киллометры
+                    {
+                        print_centered("Введите имя водителя, которому вы хотите прибавить киллометры");
+                        cin >> time_variable_string;
+                        print_centered("Введите сколько киллометров вы хотите прибавить водителю");
+                        cin >> time_variable_float;
+                        AddKillometrsDriver(time_variable_string, time_variable_float);
+                        system("pause");
+                        break;
+                    }
+                    case 3:// Вернуться назад
+                    {
+                        break;
+                    }
+                    default:
+                    {
+                        system("cls");
+                        print_centered(" Не верно введено число\n");
+                        break;
+                    }
+                    }
+                    break;
+                }
+                case 2: // охраник
+                {
+                    print_centered("Выдать зарплату - 1  Прбавить чашки кофе - 2 Вернуться назад - 3");
+                    cin >> choise;
+                    switch (choise)
+                    {
+                    case 1:// Выдать зарплату
+                    {
+                        print_centered("Введите имя охраника, которому вы хотите выдать зарплату");
+                        cin >> time_variable_string;
+                        AddSalarySecurity(time_variable_string);
+                        system("pause");
+                        break;
+                    }
+                    case 2:// Добавить чашки с коффе
+                    {
+                        print_centered("Введите имя охраника, которому вы хотите прибавить чашки с коффе");
+                        cin >> time_variable_string;
+                        print_centered("Введите сколько чашек вы хотите прибавить охранику");
+                        cin >> time_variable_int;
+                        AddCoffeSecurity(time_variable_string, time_variable_int);
+                        system("pause");
+                        break;
+                    }
+                    case 3:// Вернуться назад
+                    {
+                        break;
+                    }
+                    default:
+                    {
+                        system("cls");
+                        print_centered(" Не верно введено число\n");
+                        break;
+                    }
+                    }
+                    break;
+                }
+                case 3: // уборщик
+                {
+                    print_centered("Выдать зарплату - 1  Добавить съединых пончиков - 2 Вернуться назад - 3");
+                    cin >> choise;
+                    switch (choise)
+                    {
+                    case 1:// Выдать зарплату
+                    {
+                        print_centered("Введите имя уборщика, которому вы хотите выдать зарплату");
+                        cin >> time_variable_string;
+                        AddSalaryCleaner(time_variable_string);
+                        system("pause");
+                        break;
+                    }
+                    case 2:// Добавить съединых пончиков
+                    {
+                        print_centered("Введите имя уборщика, которому вы хотите прибавить съединых пончиков");
+                        cin >> time_variable_string;
+                        print_centered("Введите сколько пончиков вы хотите прибавить уборщику");
+                        cin >> time_variable_int;
+                        AddDonutCleaner(time_variable_string, time_variable_int);
+                        system("pause");
+                        break;
+                    }
+                    case 3:// Вернуться назад
+                    {
+                        break;
+                    }
+                    default:
+                    {
+                        system("cls");
+                        print_centered(" Не верно введено число\n");
+                        break;
+                    }
+                    }
+                    break;
+                }
+                case 4: // назад
+                {
+                    break;
+                }
+                default:
+                {
+
+                    break;
+                }
+                }
                 cout << " Назад\n";
                 break;
             }
@@ -286,10 +412,347 @@ int main()
             }
             break;
         }
-        case 2:
+        case 2: // Автобусы
         {
             system("cls");
             print_centered("Создание автобусов");
+            print_centered("Создать - 1 Списать - 2 Просмотреть список автобусов - 3 Функции - 4 Назад - 5");
+            cin >> choise;
+            switch (choise)
+            {
+            case 1: //Создать 
+            {
+                system("cls");
+                print_centered("Какой вы хотите создать автобус?");
+                print_centered("Маршрутный - 1  Грузовой - 2 Туристический - 3 Вернуться назад - 4");
+                cin >> choise;
+                switch (choise)
+                {
+                case 1: //Маршрутный 
+                {
+                    system("cls");
+                    print_centered("Id автобуса: ");
+                    cin >> id;
+                    print_centered("Год выпуска: ");
+                    cin >> yearOfManufacture;
+                    print_centered("Марка: ");
+                    cin >> marka;
+                    print_centered("Модель: ");
+                    cin >> model;
+                    print_centered("Количество выездов: ");
+                    cin >> travel;
+
+                    print_centered("Введите количество пассажиров: ");
+                    cin >> passengers;
+                    print_centered("Последняя остановка:  ");
+                    cin >> purpose_shuttle;
+                    
+                    ShuttleBus obj(yearOfManufacture, marka, model, travel, id, passengers, purpose_shuttle);
+
+                    system("cls");
+                    //saveShuttleBusToFile(obj);
+                    system("pause");
+                    cout << endl;
+                    obj.Get_info();
+                    system("pause");
+
+                    break;
+                }
+                case 2: //Грузовой 
+                {
+                    system("cls");
+                    print_centered("Id автобуса: ");
+                    cin >> id;
+                    print_centered("Год выпуска: ");
+                    cin >> yearOfManufacture;
+                    print_centered("Марка: ");
+                    cin >> marka;
+                    print_centered("Модель: ");
+                    cin >> model;
+                    print_centered("Количество выездов: ");
+                    cin >> travel;
+
+                    print_centered("Введите количество груза: ");
+                    cin >> cargo;
+                    print_centered("Цель поездки (город): ");
+                    cin >> purpose;
+
+                    FreightBus obj(yearOfManufacture, marka, model, travel,id, cargo, purpose);
+
+                    system("cls");
+                    //saveFreightBusToFile(obj);
+                    system("pause");
+                    cout << endl;
+                    obj.Get_info();
+                    system("pause");
+
+                    break;
+                }
+                case 3: //Туристический 
+                {
+                    system("cls");
+                    print_centered("Id автобуса: ");
+                    cin >> id;
+                    print_centered("Год выпуска: ");
+                    cin >> yearOfManufacture;
+                    print_centered("Марка: ");
+                    cin >> marka;
+                    print_centered("Модель: ");
+                    cin >> model;
+                    print_centered("Количество выездов: ");
+                    cin >> travel;
+
+                    print_centered("Стоимость билета: ");
+                    cin >> ticketPrice;
+                    print_centered("Конечная станция: ");
+                    cin >> theEndPoint;
+
+                    TouristBus obj(yearOfManufacture, marka, model, travel,id, ticketPrice, theEndPoint);
+
+                    system("cls");
+                    //saveTouristBusToFile(obj);
+                    system("pause");
+                    cout << endl;
+                    obj.Get_info();
+                    system("pause");
+
+                    break;
+                }
+                case 4: //Вернуться назад 
+                {
+                    break;
+                }
+                default:
+                {
+                    system("cls");
+                    print_centered(" Не верно введено число\n");
+                    break;
+                }
+
+                }
+
+            }
+            case 2: //Списать 
+            {
+                system("cls");
+                print_centered("Какой автобус вы хотите списать?");
+                print_centered("Маршрутный - 1  Грузовой - 2 Туристический - 3 Вернуться назад - 4");
+                cin >> choise;
+                switch (choise)
+                {
+                case 1: //Маршрутный
+                {
+                    system("cls");
+                    print_centered("Введите Id автобуса которого вы хотите списать");
+                    cin >> time_variable_int;
+                    //DeletShuttleBusFile(time_variable_int);
+                    system("pause");
+                    break;
+                }
+                case 2: //Грузовой
+                {
+                    system("cls");
+                    print_centered("Введите Id автобуса которого вы хотите списать");
+                    cin >> time_variable_int;
+                    //DeletFreightBusFile(time_variable_int);
+                    system("pause");
+                    break;
+                }
+                case 3: //Туристический
+                {
+                    system("cls");
+                    print_centered("Введите Id автобуса которого вы хотите списать");
+                    cin >> time_variable_int;
+                    //DeletTouristBusFile(time_variable_int);
+                    system("pause");
+                    break;
+                }
+                case 4: //Вернуться назад
+                {
+                    break;
+                }
+                default:
+                {
+                    system("cls");
+                    print_centered(" Не верно введено число\n");
+                    break;
+                }
+
+                }
+
+            }
+            case 3: //Просмотреть список автобусов 
+            {
+                system("cls");
+                cout << "             ShuttleBus" << endl;
+                cout << "---------------------------------" << endl;
+                //readShuttleBusFromFile();
+
+                cout << endl;
+                cout << "             FreightBus" << endl;
+                cout << "---------------------------------" << endl;
+                //readFreightBusFromFile();
+
+                cout << endl;
+                cout << "            TouristBus" << endl;
+                cout << "---------------------------------" << endl;
+                //readTouristBusFromFile();
+                system("pause");
+
+                break;
+
+            }
+            case 4: //Функции 
+            {
+                system("cls");
+                print_centered("Маршрутный - 1  Грузовой - 2 Туристический - 3 Вернуться назад - 4");
+                cin >> choise;
+                switch (choise)
+                {
+                case 1: //Маршрутный
+                {
+                    print_centered("Выезд автобуса из автопарка - 1  Занести в картотеку пассажиров проехавших на автобусе - 2 Вернуться назад - 3");
+                    cin >> choise;
+                    switch (choise)
+                    {
+                    case 1: //Выезд автобуса из автопарка
+                    {
+                        system("cls");
+                        print_centered("Введите Id автобуса");
+                        cin >> time_variable_int;
+                        //AddTravelShuttleBus(time_variable_int);
+                        system("pause");
+                        break;
+                    }
+                    case 2: //Занести в картотеку пассажиров проехавших на автобусе
+                    {
+                        system("cls");
+                        print_centered("Введите Id автобуса");
+                        cin >> time_variable_int;
+                        print_centered("Введите Количество пассажиров");
+                        cin >> time_variable_int_2;
+                        //AddPassengersShuttleBus(time_variable_int,time_variable_int_2);
+                        system("pause");
+                        break;
+                    }
+                    case 3: //Вернуться назад
+                    {
+                        break;
+                    }
+                    default:
+                    {
+                        system("cls");
+                        print_centered(" Не верно введено число\n");
+                        break;
+                    }
+
+                    }
+
+                }
+                case 2: //Грузовой
+                {
+                    print_centered("Выезд автобуса из автопарка - 1  Изменить количество груза - 2 Вернуться назад - 3");
+                    cin >> choise;
+                    switch (choise)
+                    {
+                    case 1: //Выезд автобуса из автопарка
+                    {
+                        system("cls");
+                        print_centered("Введите Id автобуса");
+                        cin >> time_variable_int;
+                        //AddTravelShuttleBus(time_variable_int);
+                        system("pause");
+                        break;
+                    }
+                    case 2: //Изменить количество груза
+                    {
+                        system("cls");
+                        print_centered("Введите Id автобуса");
+                        cin >> time_variable_int;
+                        print_centered("Введите количество груза");
+                        cin >> time_variable_int_2;
+                        //AddCargoPriceShuttleBus(time_variable_int,time_variable_int_2);
+                        system("pause");
+                        break;
+                    }
+                    case 3: //Вернуться назад
+                    {
+                        break;
+                    }
+                    default:
+                    {
+                        system("cls");
+                        print_centered(" Не верно введено число\n");
+                        break;
+                    }
+
+                    }
+
+                }
+                case 3: //Туристический
+                {
+                    print_centered("Выезд автобуса из автопарка - 1  Изменить стоимость билета - 2 Вернуться назад - 3");
+                    cin >> choise;
+                    switch (choise)
+                    {
+                    case 1: //Выезд автобуса из автопарка
+                    {
+                        system("cls");
+                        print_centered("Введите Id автобуса");
+                        cin >> time_variable_int;
+                        //AddTravelTouristBus(time_variable_int);
+                        system("pause");
+                        break;
+                    }
+                    case 2: //Изменить стоимость билета
+                    {
+                        system("cls");
+                        print_centered("Введите Id автобуса");
+                        cin >> time_variable_int;
+                        print_centered("Введите стоимость подорожания билета");
+                        cin >> time_variable_int_2;
+                        //AddTicketPriceTouristBus(time_variable_int,time_variable_int_2);
+                        system("pause");
+                        break;
+                    }
+                    case 3: //Вернуться назад
+                    {
+                        break;
+                    }
+                    default:
+                    {
+                        system("cls");
+                        print_centered(" Не верно введено число\n");
+                        break;
+                    }
+
+                    }
+                }
+                case 4: //Вернуться назад
+                {
+                    break;
+                }
+                default:
+                {
+                    system("cls");
+                    print_centered(" Не верно введено число\n");
+                    break;
+                }
+                }
+
+            }
+            case 5: //Назад 
+            {
+                break;
+            }
+            default:
+            {
+                system("cls");
+                print_centered(" Не верно введено число\n");
+                break;
+            }
+
+            }
             break;
         }
         case 3:

@@ -23,7 +23,7 @@ public:
     void Eat_donut(int num)
     {
         Eaten_donuts += num;
-        cout << "Уборщик " << GetSurname() << GetName() << GetPatronymic() << " съел " << num << " пончика" << endl;
+        cout << "Уборщик " << GetSurname() << " " << GetName() << " " << GetPatronymic() << " съел " << num << " пончика" << endl;
     }
     void Get_info()
     {

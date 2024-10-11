@@ -23,7 +23,7 @@ public:
     void Drink_coffe(int num)
     {
         Coffe_drink += num;
-        cout << "Охраник " << GetSurname() << GetName() << GetPatronymic() << " выпил " << num << " чашки коффе" << endl;
+        cout << "Охраник " << GetSurname() << " " << GetName() << " " << GetPatronymic() << " выпил " << num << " чашки коффе" << endl;
     }
     void Get_info()
     {
