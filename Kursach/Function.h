@@ -21,6 +21,9 @@ void readDriversFromFile();
 void readSecuritiesFromFile();
 void readCleanersFromFile();
 void print_centered(const string& text);
+void DeletDriverFile(const string& Drivername);
+void DeletSecurityFile(const string& Securityname);
+void DeletCleanerFile(const string& Cleanername);
 
 
 

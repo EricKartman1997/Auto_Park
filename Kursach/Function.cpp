@@ -395,3 +395,169 @@ void print_centered(const string& text) {
     // Выводим текст с отступом
     cout << string(padding, ' ') << text << endl;
 }
+// Метод для удаления объекта из файла по имени
+void DeletDriverFile(const string& Drivername) {
+    string filename = "driver.txt";
+    ifstream infile(filename);
+    ofstream outfile("Test.txt");
+    string name, surname, patronymic, phone_number, gender;
+    int day, month, year, age, experience, opening_hours;
+    float salary, money, kilometrage;
+
+    if (infile.is_open() && outfile.is_open()) {
+        // Считываем данные объекта из файла
+        while (getline(infile, name))
+        {
+            getline(infile, surname); // string
+            getline(infile, patronymic);// string
+            getline(infile, gender);// string
+            infile >> day >> month >> year >> age >> opening_hours;
+            infile.ignore();
+            getline(infile, phone_number);// string
+            infile >> salary >> money >> experience >> kilometrage;
+            infile.ignore();
+            Driver driver(name, surname, patronymic, gender, day, month, year, age, opening_hours, phone_number, salary, money, experience, kilometrage);
+            // Проверка, нужно ли удалять объект
+            if (driver.GetName() != Drivername) {
+                // Записываем объект в временный файл
+                outfile << driver.GetName() << endl;
+                outfile << driver.GetSurname() << endl;
+                outfile << driver.GetPatronymic() << endl;
+                outfile << driver.GetGender() << endl;
+                outfile << driver.GetDay() << endl;
+                outfile << driver.GetMonth() << endl;
+                outfile << driver.GetYear() << endl;
+                outfile << driver.GetAge() << endl;
+                outfile << driver.GetOpening_hours() << endl;
+                outfile << driver.GetPhone_namber() << endl;
+                outfile << driver.GetSalary() << endl;
+                outfile << driver.GetMoney() << endl;
+                outfile << driver.GetExperience() << endl;
+                outfile << driver.GetKilometrage() << endl;
+                cout << "фаил записан" << endl;
+            }
+        }
+
+        infile.close();
+        outfile.close();
+
+        // Перемещение содержимого временного файла в исходный файл
+        remove(filename.c_str());
+        rename("Test.txt", filename.c_str());
+
+        cout << "Объект с именем " << Drivername << " успешно удален из файла." << endl;
+    }
+    else {
+        cout << "Ошибка открытия файла." << endl;
+    }
+}
+void DeletSecurityFile(const string& Securityname) {
+    string filename = "security.txt";
+    ifstream infile(filename);
+    ofstream outfile("Test.txt");
+    string name, surname, patronymic, phone_number, gender;
+    int day, month, year, age, verified_person, opening_hours, coffe_drink;
+    float salary, money;
+
+    if (infile.is_open() && outfile.is_open()) {
+        // Считываем данные объекта из файла
+        while (getline(infile, name))
+        {
+            getline(infile, surname); // string
+            getline(infile, patronymic);// string
+            getline(infile, gender);// string
+            infile >> day >> month >> year >> age >> opening_hours;
+            infile.ignore();
+            getline(infile, phone_number);// string
+            infile >> salary >> money >> verified_person >> coffe_drink;
+            infile.ignore();
+            Security obj(name, surname, patronymic, gender, day, month, year, age, opening_hours, phone_number, salary, money, verified_person, coffe_drink);
+            // Проверка, нужно ли удалять объект
+            if (obj.GetName() != Securityname) {
+                // Записываем объект в временный файл
+                outfile << obj.GetName() << endl;
+                outfile << obj.GetSurname() << endl;
+                outfile << obj.GetPatronymic() << endl;
+                outfile << obj.GetGender() << endl;
+                outfile << obj.GetDay() << endl;
+                outfile << obj.GetMonth() << endl;
+                outfile << obj.GetYear() << endl;
+                outfile << obj.GetAge() << endl;
+                outfile << obj.GetOpening_hours() << endl;
+                outfile << obj.GetPhone_namber() << endl;
+                outfile << obj.GetSalary() << endl;
+                outfile << obj.GetMoney() << endl;
+                outfile << obj.GetVerified_person() << endl;
+                outfile << obj.GetCoffe_drink() << endl;
+                cout << "фаил записан" << endl;
+            }
+        }
+
+        infile.close();
+        outfile.close();
+
+        // Перемещение содержимого временного файла в исходный файл
+        remove(filename.c_str());
+        rename("Test.txt", filename.c_str());
+
+        cout << "Объект с именем " << Securityname << " успешно удален из файла." << endl;
+    }
+    else {
+        cout << "Ошибка открытия файла." << endl;
+    }
+}
+void DeletCleanerFile(const string& Cleanername) {
+    string filename = "cleaner.txt";
+    ifstream infile(filename);
+    ofstream outfile("Test.txt");
+    string name, surname, patronymic, phone_number, gender;
+    int day, month, year, age, clear_room, opening_hours, eaten_donuts;
+    float salary, money;
+
+    if (infile.is_open() && outfile.is_open()) {
+        // Считываем данные объекта из файла
+        while (getline(infile, name))
+        {
+            getline(infile, surname); // string
+            getline(infile, patronymic);// string
+            getline(infile, gender);// string
+            infile >> day >> month >> year >> age >> opening_hours;
+            infile.ignore();
+            getline(infile, phone_number);// string
+            infile >> salary >> money >> clear_room >> eaten_donuts;
+            infile.ignore();
+            Cleaner obj(name, surname, patronymic, gender, day, month, year, age, opening_hours, phone_number, salary, money, clear_room, eaten_donuts);
+            // Проверка, нужно ли удалять объект
+            if (obj.GetName() != Cleanername) {
+                // Записываем объект в временный файл
+                outfile << obj.GetName() << endl;
+                outfile << obj.GetSurname() << endl;
+                outfile << obj.GetPatronymic() << endl;
+                outfile << obj.GetGender() << endl;
+                outfile << obj.GetDay() << endl;
+                outfile << obj.GetMonth() << endl;
+                outfile << obj.GetYear() << endl;
+                outfile << obj.GetAge() << endl;
+                outfile << obj.GetOpening_hours() << endl;
+                outfile << obj.GetPhone_namber() << endl;
+                outfile << obj.GetSalary() << endl;
+                outfile << obj.GetMoney() << endl;
+                outfile << obj.GetClear_room() << endl;
+                outfile << obj.GetEaten_donuts() << endl;
+                cout << "фаил записан" << endl;
+            }
+        }
+
+        infile.close();
+        outfile.close();
+
+        // Перемещение содержимого временного файла в исходный файл
+        remove(filename.c_str());
+        rename("Test.txt", filename.c_str());
+
+        cout << "Объект с именем " << Cleanername << " успешно удален из файла." << endl;
+    }
+    else {
+        cout << "Ошибка открытия файла." << endl;
+    }
+}

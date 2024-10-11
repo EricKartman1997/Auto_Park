@@ -6,6 +6,7 @@
 #include "Security.h"
 #include "Cleaner.h"
 #include "Function.h"
+#include <Windows.h>
 using namespace std;
 
 int choise;
@@ -26,13 +27,13 @@ string path_bus = "bus.txt";
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);//установка кодовой стран
+    SetConsoleOutputCP(1251);//установка
+    //setlocale(LC_ALL, "Russian");
     bool Run = true;
-    //Employee Egor("Егор","Жулдыбин","Михайлович","M",9,6,20003,30,8,"+79879607066",20000,0);
-    //Egor.Get_salary();
-    //Egor.Get_info();
     while (Run)
     {
+        system("cls");
         print_centered("Здравствуйте вы вошли  в программу Парка Автобусов");
         print_centered("Выберите пункт");
         print_centered("Работники - 1  Автобусы - 2 Выйти - 3");
@@ -58,34 +59,34 @@ int main()
                 case 1: //создать водителя
                 {
                     system("cls");
-                    cout << "Введите имя: " << endl;
+                    print_centered("Введите имя: ");
                     cin >> name;
-                    cout << "Введите фамилия: " << endl;
+                    print_centered("Введите фамилия: ");
                     cin >> surname;
-                    cout << "Введите отчество: " << endl;
+                    print_centered("Введите отчество: ");
                     cin >> patronymic;
-                    cout << "Введите пол: " << endl;
+                    print_centered("Введите пол: ");
                     cin >> gender;
-                    cout << "Введите дату рождения: " << endl;
-                    cout << "Введите день: " << endl;
+                    print_centered("Введите дату рождения: ");
+                    print_centered("Введите день: ");
                     cin >> day;
-                    cout << "Введите месяц: " << endl;
+                    print_centered("Введите месяц: ");
                     cin >> month;
-                    cout << "Введите год: " << endl;
+                    print_centered("Введите год: ");
                     cin >> year;
-                    cout << "Введите возраст: " << endl;
+                    print_centered("Введите возраст: ");
                     cin >> age;
-                    cout << "Введите часы работы: " << endl;
+                    print_centered("Введите часы работы: ");
                     cin >> opening_hours;
-                    cout << "Введите номер телефона: " << endl;
+                    print_centered("Введите номер телефона: ");
                     cin >> phone_namber;
-                    cout << "Введите зарплата: " << endl;
+                    print_centered("Введите зарплата: ");
                     cin >> salary;
-                    cout << "Введите наличные: " << endl;
+                    print_centered("Введите наличные: ");
                     cin >> money;
-                    cout << "Введите водительский стаж в годах: " << endl;
+                    print_centered("Введите водительский стаж в годах: ");
                     cin >> experience;
-                    cout << "Введите пройденные километры: " << endl;
+                    print_centered("Введите пройденные километры: ");
                     cin >> kilometrage;
 
                     Driver newDriver(name, surname, patronymic, gender, day, month,
@@ -104,34 +105,34 @@ int main()
                 case 2: //создать охраника
                 {
                     system("cls");
-                    cout << "Введите имя: " << endl;
+                    print_centered("Введите имя: ");
                     cin >> name;
-                    cout << "Введите фамилия: " << endl;
+                    print_centered("Введите фамилия: ");
                     cin >> surname;
-                    cout << "Введите отчество: " << endl;
+                    print_centered("Введите отчество: ");
                     cin >> patronymic;
-                    cout << "Введите пол: " << endl;
+                    print_centered("Введите пол: ");
                     cin >> gender;
-                    cout << "Введите дату рождения: " << endl;
-                    cout << "Введите день: " << endl;
+                    print_centered("Введите дату рождения: ");
+                    print_centered("Введите день: ");
                     cin >> day;
-                    cout << "Введите месяц: " << endl;
+                    print_centered("Введите месяц: ");
                     cin >> month;
-                    cout << "Введите год: " << endl;
+                    print_centered("Введите год: ");
                     cin >> year;
-                    cout << "Введите возраст: " << endl;
+                    print_centered("Введите возраст: ");
                     cin >> age;
-                    cout << "Введите часы работы: " << endl;
+                    print_centered("Введите часы работы: ");
                     cin >> opening_hours;
-                    cout << "Введите номер телефона: " << endl;
+                    print_centered("Введите номер телефона: ");
                     cin >> phone_namber;
-                    cout << "Введите зарплата: " << endl;
+                    print_centered("Введите зарплата: ");
                     cin >> salary;
-                    cout << "Введите наличные: " << endl;
+                    print_centered("Введите наличные: ");
                     cin >> money;
-                    cout << "Введите сколько человек проверил охраник за сегодня: " << endl;
+                    print_centered("Введите сколько человек проверил охраник за сегодня: ");
                     cin >> verified_person;
-                    cout << "Введите колличество выпитых коффе за сегодня: " << endl;
+                    print_centered("Введите колличество выпитых коффе за сегодня: ");
                     cin >> coffe_drink;
 
                     Security newSecurity(name, surname, patronymic, gender, day, month,
@@ -148,34 +149,34 @@ int main()
                 case 3: //создать уборщика
                 {
                     system("cls");
-                    cout << "Введите имя: " << endl;
+                    print_centered("Введите имя: ");
                     cin >> name;
-                    cout << "Введите фамилия: " << endl;
+                    print_centered("Введите фамилия: ");
                     cin >> surname;
-                    cout << "Введите отчество: " << endl;
+                    print_centered("Введите отчество: ");
                     cin >> patronymic;
-                    cout << "Введите пол: " << endl;
+                    print_centered("Введите пол: ");
                     cin >> gender;
-                    cout << "Введите дату рождения: " << endl;
-                    cout << "Введите день: " << endl;
+                    print_centered("Введите дату рождения: ");
+                    print_centered("Введите день: ");
                     cin >> day;
-                    cout << "Введите месяц: " << endl;
+                    print_centered("Введите месяц: ");
                     cin >> month;
-                    cout << "Введите год: " << endl;
+                    print_centered("Введите год: ");
                     cin >> year;
-                    cout << "Введите возраст: " << endl;
+                    print_centered("Введите возраст: ");
                     cin >> age;
-                    cout << "Введите часы работы: " << endl;
+                    print_centered("Введите часы работы: ");
                     cin >> opening_hours;
-                    cout << "Введите номер телефона: " << endl;
+                    print_centered("Введите номер телефона: ");
                     cin >> phone_namber;
-                    cout << "Введите зарплата: " << endl;
+                    print_centered("Введите зарплата: ");
                     cin >> salary;
-                    cout << "Введите наличные: " << endl;
+                    print_centered("Введите наличные: ");
                     cin >> money;
-                    cout << "Введите сколько убраных комнат за сегодня: " << endl;
+                    print_centered("Введите сколько убраных комнат за сегодня: ");
                     cin >> clear_room;
-                    cout << "Введите колличество съединых пончиков за сегодня: " << endl;
+                    print_centered("Введите колличество съединых пончиков за сегодня: ");
                     cin >> eaten_donuts;
 
                     Cleaner newCleaner(name, surname, patronymic, gender, day, month,
@@ -194,7 +195,8 @@ int main()
                     break;
                 }
                 default:
-                    cout << " Не верно введено число\n";
+                    system("cls");
+                    print_centered(" Не верно введено число\n");
                     break;
                 }
                 break;
@@ -202,8 +204,49 @@ int main()
             case 2: //уволить
             {
                 system("cls");
-                //Уволить
-                cout << " Увольнение\n";
+                print_centered("Кого вы хотите уволить?");
+                print_centered("Водитель - 1  Охраник - 2 Уборщик - 3 Вернуться назад - 4");
+                cin >> choise;
+                switch (choise)
+                {
+                case 1:
+                {
+                    system("cls");
+                    print_centered("Введите имя водителя которого вы хотите уволить");
+                    cin>>name;
+                    DeletDriverFile(name);
+                    system("pause");
+                    break;
+                }
+                case 2:
+                {
+                    system("cls");
+                    print_centered("Введите имя охраника которого вы хотите уволить");
+                    cin >> name;
+                    DeletSecurityFile(name);
+                    system("pause");
+                    break;
+                }
+                case 3:
+                {
+                    system("cls");
+                    print_centered("Введите имя уборщика которого вы хотите уволить");
+                    cin >> name;
+                    DeletCleanerFile(name);
+                    system("pause");
+                    break;
+                }
+                case 4://Назад
+                {
+                    break;
+                }
+                default:
+                {
+                    system("cls");
+                    print_centered(" Не верно введено число\n");
+                    break;
+                }
+                }
                 break;
             }
             case 3: //просмотр
@@ -212,38 +255,19 @@ int main()
                 cout << "             Drivers" << endl;
                 cout << "---------------------------------" << endl;
                 readDriversFromFile();
-                system("pause");
-                break;
-                //Driver driver;
-                //reading(path_driver, driver);
-                //cout << "Фаил открыт" << endl;
-                
-                // Вывод данных о прочитанных объектах
-                /*
-                cout << count << endl;
-                for (int i = 0; i < count; i++) 
-                {
-                    drivers[i].Get_info(); 
-                    cout << "---------------------------------" << endl;
-                }
-                // Освобождение памяти
-                delete[] drivers;
-                */
-                /*
+
                 cout << endl;
                 cout << "             Security" << endl;
                 cout << "---------------------------------" << endl;
-                Security security;
-                reading(path_security,security);
-                
+                readSecuritiesFromFile();
+
                 cout << endl;
                 cout << "            Cleaners" << endl;
                 cout << "---------------------------------" << endl;
-                Cleaner cleaner;
-                reading(path_cleaner,cleaner);
-                
-                */
-                
+                readCleanersFromFile();
+                system("pause");
+
+                break;
             }
             case 4: //функции
             {
@@ -256,7 +280,8 @@ int main()
                 break;
             }
             default:
-                cout << " Не верно введено число\n";
+                system("cls");
+                print_centered(" Не верно введено число\n");
                 break;
             }
             break;
@@ -264,14 +289,14 @@ int main()
         case 2:
         {
             system("cls");
-            cout << "Создание автобусов" << endl;
+            print_centered("Создание автобусов");
             break;
         }
         case 3:
         {
             // выход из программы
             system("cls");
-            cout << "Досвидания\n";
+            print_centered("Досвидания\n");
             Run = false;
             system("pause");
             break;
@@ -279,7 +304,7 @@ int main()
         default:
         {
             system("cls");
-            cout << " Не верно введено число\n";
+            print_centered(" Не верно введено число\n");
             break;
         }
         }
