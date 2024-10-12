@@ -1152,7 +1152,7 @@ void DeletFreightBusFile(string id_bus)
         }
         if (rename("Test.txt", filename.c_str()) == 0)
         {
-            cout << "Файл успешно переименован в " << filename << endl;
+            //cout << "Файл успешно переименован в " << filename << endl;
         }
         else
         {
@@ -1374,6 +1374,148 @@ void AddPassengersShuttleBus(string id_bus, int passengers_bus)
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
         print_centered("К объекту успешно прибавлены пассажиры.");
+    }
+    else
+    {
+        cout << "Ошибка открытия файла." << endl;
+    }
+}
+void AddTravelFreightBus(string id_bus, int travel_bus)
+{
+    string filename = "freightbus.txt";
+    ifstream infile(filename);
+    ofstream outfile;
+    outfile.open("Test.txt", ios::app);
+    string marka, model, purpose, id;
+    int yearOfManufacture, travel, cargo;
+
+    if (infile.is_open() && outfile.is_open())
+    {
+        // Считываем данные объекта из файла
+        while (getline(infile, id)) // string
+        {
+            if (infile.good()) // Проверка на успешное чтение
+            {
+                infile >> yearOfManufacture;
+                infile.ignore();
+                getline(infile, marka); // string
+                getline(infile, model);// string
+                infile >> travel >> cargo;
+                infile.ignore();
+                getline(infile, purpose);
+
+                FreightBus obj(id, yearOfManufacture, marka, model, travel, cargo, purpose);
+                if (obj.GetId() == id_bus)
+                {
+                    obj.AddTrip(travel_bus);
+                }
+                // Записываем объект в временный файл
+                outfile << obj.GetId() << endl;
+                outfile << obj.GetYearOfManufacture() << endl;
+                outfile << obj.GetMarka() << endl;
+                outfile << obj.GetModel() << endl;
+                outfile << obj.GetTravel() << endl;
+                outfile << obj.GetCargo() << endl;
+                outfile << obj.GetPurpose() << endl;
+                cout << "фаил записан" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+        outfile.close();
+
+        // Перемещение содержимого временного файла в исходный файл
+        if (remove(filename.c_str()) == 0)
+        {
+            //cout << "Файл " << filename << " успешно удален" << endl;
+        }
+        else
+        {
+            cerr << "Ошибка при удалении файла" << endl;
+        }
+        if (rename("Test.txt", filename.c_str()) == 0)
+        {
+            //cout << "Файл успешно переименован в " << filename << endl;
+        }
+        else
+        {
+            cout << "ОШИБКА - Файл не переименован в " << filename << endl;
+        }
+        print_centered("У автобуса успешно прибавлены поездки.");
+    }
+    else
+    {
+        cout << "Ошибка открытия файла." << endl;
+    }
+}
+void AddCargoPriceFreightBus(string id_bus, int cargo_bus)
+{
+    string filename = "freightbus.txt";
+    ifstream infile(filename);
+    ofstream outfile;
+    outfile.open("Test.txt", ios::app);
+    string marka, model, purpose, id;
+    int yearOfManufacture, travel, cargo;
+
+    if (infile.is_open() && outfile.is_open())
+    {
+        // Считываем данные объекта из файла
+        while (getline(infile, id)) // string
+        {
+            if (infile.good()) // Проверка на успешное чтение
+            {
+                infile >> yearOfManufacture;
+                infile.ignore();
+                getline(infile, marka); // string
+                getline(infile, model);// string
+                infile >> travel >> cargo;
+                infile.ignore();
+                getline(infile, purpose);
+
+                FreightBus obj(id, yearOfManufacture, marka, model, travel, cargo, purpose);
+                if (obj.GetId() == id_bus)
+                {
+                    obj.AddCargo(cargo_bus);
+                }
+                // Записываем объект в временный файл
+                outfile << obj.GetId() << endl;
+                outfile << obj.GetYearOfManufacture() << endl;
+                outfile << obj.GetMarka() << endl;
+                outfile << obj.GetModel() << endl;
+                outfile << obj.GetTravel() << endl;
+                outfile << obj.GetCargo() << endl;
+                outfile << obj.GetPurpose() << endl;
+                cout << "фаил записан" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+        outfile.close();
+
+        // Перемещение содержимого временного файла в исходный файл
+        if (remove(filename.c_str()) == 0)
+        {
+            //cout << "Файл " << filename << " успешно удален" << endl;
+        }
+        else
+        {
+            cerr << "Ошибка при удалении файла" << endl;
+        }
+        if (rename("Test.txt", filename.c_str()) == 0)
+        {
+            //cout << "Файл успешно переименован в " << filename << endl;
+        }
+        else
+        {
+            cout << "ОШИБКА - Файл не переименован в " << filename << endl;
+        }
+        print_centered("У автобуса успешно прибавлены поездки.");
     }
     else
     {

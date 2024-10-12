@@ -665,8 +665,10 @@ int main()
 					{
 						system("cls");
 						print_centered("Введите Id автобуса");
+						cin >> time_variable_string;
+						print_centered("Введите сколько вы хотите прибавить поездок");
 						cin >> time_variable_int;
-						//AddTravelShuttleBus(time_variable_int);
+						AddTravelFreightBus(time_variable_string,time_variable_int);
 						system("pause");
 						break;
 					}
@@ -674,10 +676,10 @@ int main()
 					{
 						system("cls");
 						print_centered("Введите Id автобуса");
-						cin >> time_variable_int;
+						cin >> time_variable_string;
 						print_centered("Введите количество груза");
-						cin >> time_variable_int_2;
-						//AddCargoPriceShuttleBus(time_variable_int,time_variable_int_2);
+						cin >> time_variable_int;
+						AddCargoPriceFreightBus(time_variable_string,time_variable_int);
 						system("pause");
 						break;
 					}
@@ -705,8 +707,10 @@ int main()
 					{
 						system("cls");
 						print_centered("Введите Id автобуса");
+						cin >> time_variable_string;
+						print_centered("Введите сколько вы хотите прибавить поездок");
 						cin >> time_variable_int;
-						//AddTravelTouristBus(time_variable_int);
+						//AddTravelTouristBus(time_variable_string,time_variable_int);
 						system("pause");
 						break;
 					}

@@ -50,6 +50,8 @@ void DeletTouristBusFile(string id_bus);
 //функции
 void AddTravelShuttleBus(string id_bus, int travel_bus);
 void AddPassengersShuttleBus(string id_bus, int passengers_bus);
+void AddTravelFreightBus(string id_bus, int travel_bus);
+void AddCargoPriceFreightBus(string id_bus, int cargo_bus);
 
 
 
