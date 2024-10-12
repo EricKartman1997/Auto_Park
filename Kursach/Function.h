@@ -45,6 +45,11 @@ void readFreightBusFromFile();
 void readTouristBusFromFile();
 //удаление из фаила
 void DeletShuttleBusFile(string id_bus);
+void DeletFreightBusFile(string id_bus);
+void DeletTouristBusFile(string id_bus);
+//функции
+void AddTravelShuttleBus(string id_bus, int travel_bus);
+void AddPassengersShuttleBus(string id_bus, int passengers_bus);
 
 
 

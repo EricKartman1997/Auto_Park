@@ -202,8 +202,8 @@ int main()
 					print_centered(" Не верно введено число\n");
 					break;
 				}
-				break;
 				}
+			break;
 			case 2: //уволить
 			{
 				system("cls");
@@ -392,6 +392,7 @@ int main()
 				}
 				case 4: // назад
 				{
+					cout << " Назад\n";
 					break;
 				}
 				default:
@@ -401,7 +402,6 @@ int main()
 					break;
 				}
 				}
-				cout << " Назад\n";
 				break;
 			}
 			case 5: //выйти
@@ -413,8 +413,9 @@ int main()
 				print_centered(" Не верно введено число\n");
 				break;
 			}
-			break;
+
 			}
+			break;
 		case 2: // Автобусы
 		{
 			system("cls");
@@ -556,8 +557,8 @@ int main()
 				{
 					system("cls");
 					print_centered("Введите Id автобуса которого вы хотите списать");
-					cin >> time_variable_int;
-					//DeletFreightBusFile(time_variable_int);
+					cin >> time_variable_string;
+					DeletFreightBusFile(time_variable_string);
 					system("pause");
 					break;
 				}
@@ -565,8 +566,8 @@ int main()
 				{
 					system("cls");
 					print_centered("Введите Id автобуса которого вы хотите списать");
-					cin >> time_variable_int;
-					//DeletTouristBusFile(time_variable_int);
+					cin >> time_variable_string;
+					DeletTouristBusFile(time_variable_string);
 					system("pause");
 					break;
 				}
@@ -582,7 +583,7 @@ int main()
 				}
 
 				}
-
+				break;
 			}
 			case 3: //Просмотреть список автобусов 
 			{
@@ -622,8 +623,10 @@ int main()
 					{
 						system("cls");
 						print_centered("Введите Id автобуса");
+						cin >> time_variable_string;
+						print_centered("Введите сколько вы хотите прибавить поездок");
 						cin >> time_variable_int;
-						//AddTravelShuttleBus(time_variable_int);
+						AddTravelShuttleBus(time_variable_string, time_variable_int);
 						system("pause");
 						break;
 					}
@@ -631,10 +634,10 @@ int main()
 					{
 						system("cls");
 						print_centered("Введите Id автобуса");
-						cin >> time_variable_int;
+						cin >> time_variable_string;
 						print_centered("Введите Количество пассажиров");
 						cin >> time_variable_int_2;
-						//AddPassengersShuttleBus(time_variable_int,time_variable_int_2);
+						AddPassengersShuttleBus(time_variable_string,time_variable_int_2);
 						system("pause");
 						break;
 					}
