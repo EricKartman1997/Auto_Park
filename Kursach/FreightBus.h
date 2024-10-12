@@ -1,22 +1,24 @@
 #pragma once
+
 #include "Bus.h"
-class FreightBus :public Bus
+class FreightBus : public Bus
 {
 private:
     int Cargo;
     string Purpose;
 public:
 
-    FreightBus(const int& yearOfManufacture, const string& marka, const string& model,
-        int travel, const int id, int cargo, string purpose) :Bus(yearOfManufacture, marka, model, travel,id), Cargo(cargo), Purpose(purpose) {}
+    FreightBus(const string& id, const int& yearOfManufacture, const string& marka, const string& model,
+        int travel,  int cargo, string purpose) :Bus(id, yearOfManufacture, marka, model, travel), Cargo(cargo), Purpose(purpose) {}
 
     FreightBus()
     {
-
+        Cargo = 0;
+        Purpose = "";
     }
     void AddCargo(int num)
     {
-        print_centered("Количество груза увеличина");
+        cout << "Количество груза увеличина" << GetId() << endl;
         Cargo += num;
     }
     void Get_info()
@@ -33,4 +35,5 @@ public:
     string GetPurpose() const { return Purpose; }
 
 };
+
 

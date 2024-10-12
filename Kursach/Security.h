@@ -17,7 +17,8 @@ public:
 
     Security()
     {
-
+        Verified_person = 0;
+        Coffe_drink = 0;
     }
 
     void Drink_coffe(int num)

@@ -18,7 +18,6 @@ public:
     {
         Experience = 0;
         Kilometrage = 0;
-
     }
 
 

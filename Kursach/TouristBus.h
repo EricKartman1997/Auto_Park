@@ -1,22 +1,24 @@
 #pragma once
+
 #include "Bus.h"
-class TouristBus :public Bus
+class TouristBus : public Bus
 {
 private:
     int TicketPrice;
     string TheEndPoint;
 public:
 
-    TouristBus(const int& yearOfManufacture, const string& marka, const string& model,
-        int travel, const int id, int ticketPrice, string theEndPoint) :Bus(yearOfManufacture, marka, model, travel,id), TicketPrice(ticketPrice), TheEndPoint(theEndPoint) {}
+    TouristBus(const string& id, const int& yearOfManufacture, const string& marka, const string& model,
+        int travel,  int ticketPrice, string theEndPoint) :Bus(id,yearOfManufacture, marka, model, travel), TicketPrice(ticketPrice), TheEndPoint(theEndPoint) {}
 
     TouristBus()
     {
-
+        TicketPrice = 100;
+        TheEndPoint = "EndPoint";
     }
     void AddTicketPrice(int num)
     {
-        print_centered("Стоимость поездки увеличина");
+        cout << "Стоимость поездки увеличина" << endl;
         TicketPrice += num;
     }
     void Get_info()
@@ -33,4 +35,5 @@ public:
     string GetTheEndPoint() const { return TheEndPoint; }
 
 };
+
 

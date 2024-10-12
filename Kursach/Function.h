@@ -8,23 +8,21 @@
 #include "FreightBus.h"
 #include "TouristBus.h"
 #include "ShuttleBus.h"
-//#include "Employee.h"
+#include "Bus.h"
+#include "Employee.h"
+#include < stdio.h >
 using namespace std;
 
-void record(string path, Cleaner newCleaner);
-void record(string path, Driver newDriver);
-void record(string path, Security newSecurity);
-void reading(string path, Cleaner& newCleaner);
-void reading(string path, Driver& newDriver);
-void reading(string path, Security& newSecurity);
-// просмотр
+void print_centered(const string& text);
+//Работники
+//сохранение в файл
 void saveDriverToFile(const Driver& driver);
 void saveSecurityToFile(const Security& security);
 void saveCleanerToFile(const Cleaner& cleaner);
+//чтение из файла
 void readDriversFromFile();
 void readSecuritiesFromFile();
 void readCleanersFromFile();
-void print_centered(const string& text);
 //удаление
 void DeletDriverFile(const string& Drivername);
 void DeletSecurityFile(const string& Securityname);
@@ -36,6 +34,17 @@ void AddCoffeSecurity(const string& Securityname, int AddCoffe);
 void AddSalarySecurity(const string& Securityname);
 void AddDonutCleaner(const string& Cleanername, int AddDonut);
 void AddSalaryCleaner(const string& Cleanername);
+//Автобусы
+//сохранение в файл
+void saveShuttleBusToFile(const ShuttleBus& obj);
+void saveFreightBusToFile(const FreightBus& obj);
+void saveTouristBusToFile(const TouristBus& obj);
+//чтение из файла
+void readShuttleBusFromFile();
+void readFreightBusFromFile();
+void readTouristBusFromFile();
+//удаление из фаила
+void DeletShuttleBusFile(string id_bus);
 
 
 

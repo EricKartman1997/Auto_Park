@@ -1,136 +1,16 @@
 #include "Function.h"
 
-void record(string path, Cleaner newCleaner)
-{
-    ofstream fout;
+//выводит текс по середине экрана
+void print_centered(const string& text) {
+    // Получаем ширину терминала
+    int terminal_width = 120; // Замените на функцию получения ширины терминала
 
-    fout.open(path, ofstream::app);
-    if (!fout.is_open())
-    {
-        cout << "Ошибка открытия файла" << endl;
-    }
-    else
-    {
-        //cout << "Фаил открыт" << endl;
-        fout.write((char*)&newCleaner, sizeof(Cleaner));
-    }
-    fout.close();
-}
-void record(string path, Driver newDriver)
-{
-    ofstream fout;
 
-    fout.open(path, ofstream::app);
-    if (!fout.is_open())
-    {
-        cout << "Ошибка открытия файла" << endl;
-    }
-    else
-    {
-        cout << "Фаил открыт" << endl;
-        fout.write((char*)&newDriver, sizeof(Driver));
-    }
-    fout.close();
-}
-void record(string path, Security newSecurity)
-{
-    ofstream fout;
+    // Вычисляем количество пробелов для центрирования
+    int padding = (terminal_width - text.length()) / 2;
 
-    fout.open(path, ofstream::app);
-    if (!fout.is_open())
-    {
-        cout << "Ошибка открытия файла" << endl;
-    }
-    else
-    {
-        cout << "Фаил открыт" << endl;
-        fout.write((char*)&newSecurity, sizeof(Security));
-    }
-    fout.close();
-}
-void reading(string path, Driver& newDriver)
-{
-    ifstream fin;
-    fin.open(path, ios::binary);
-
-    if (!fin.is_open())
-    {
-        cout << "Ошибка открытия файла" << endl;
-    }
-    else
-    {
-
-        while (fin.read((char*)&newDriver, sizeof(Driver)))
-        {
-            if (fin.good()) { // Проверка на успешное чтение
-                newDriver.Get_info();
-                cout << "---------------------------------" << endl;
-            }
-            else {
-                cout << "Ошибка чтения" << endl;
-                break; // Прекращаем цикл при ошибке чтения
-            }
-        }
-
-    }
-    fin.close();
-    
-}
-void reading(string path, Security& newSecurity)
-{
-    ifstream fin;
-    fin.open(path, ios::binary);
-
-    if (!fin.is_open())
-    {
-        cout << "Ошибка открытия файла" << endl;
-    }
-    else
-    {
-
-        while (fin.read((char*)&newSecurity, sizeof(Security)))
-        {
-            if (fin.good()) { // Проверка на успешное чтение
-                newSecurity.Get_info();
-                cout << "---------------------------------" << endl;
-            }
-            else {
-                cout << "Ошибка чтения" << endl;
-                break; // Прекращаем цикл при ошибке чтения
-            }
-        }
-
-    }
-    fin.close();
-    
-}
-void reading(string path, Cleaner& newCleaner)
-{
-    ifstream fin;
-    fin.open(path, ios::binary);
-
-    if (!fin.is_open())
-    {
-        cout << "Ошибка открытия файла" << endl;
-    }
-    else
-    {
-
-        while (fin.read((char*)&newCleaner, sizeof(Cleaner)))
-        {
-            if (fin.good()) { // Проверка на успешное чтение
-                newCleaner.Get_info();
-                cout << "---------------------------------" << endl;
-            }
-            else {
-                cout << "Ошибка чтения" << endl;
-                break; // Прекращаем цикл при ошибке чтения
-            }
-        }
-
-    }
-    fin.close();
-    
+    // Выводим текст с отступом
+    cout << string(padding, ' ') << text << endl;
 }
 // Метод записи данных в файл
 void saveDriverToFile(const Driver& driver) 
@@ -383,18 +263,6 @@ void readCleanersFromFile()
         cout << "Ошибка открытия файла для чтения!" << endl;
     }
 }
-//выводит текс по середине экрана
-void print_centered(const string& text) {
-    // Получаем ширину терминала
-    int terminal_width = 120; // Замените на функцию получения ширины терминала
-
-
-    // Вычисляем количество пробелов для центрирования
-    int padding = (terminal_width - text.length()) / 2;
-
-    // Выводим текст с отступом
-    cout << string(padding, ' ') << text << endl;
-}
 // Метод для удаления объекта из файла по имени
 void DeletDriverFile(const string& Drivername) {
     string filename = "driver.txt";
@@ -418,7 +286,8 @@ void DeletDriverFile(const string& Drivername) {
             infile.ignore();
             Driver driver(name, surname, patronymic, gender, day, month, year, age, opening_hours, phone_number, salary, money, experience, kilometrage);
             // Проверка, нужно ли удалять объект
-            if (driver.GetName() != Drivername) {
+            if (driver.GetName() != Drivername) 
+            {
                 // Записываем объект в временный файл
                 outfile << driver.GetName() << endl;
                 outfile << driver.GetSurname() << endl;
@@ -443,7 +312,15 @@ void DeletDriverFile(const string& Drivername) {
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if (i == 0)
+        {
+            cout << "успех" << endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
 
         cout << "Объект с именем " << Drivername << " успешно удален из файла." << endl;
     }
@@ -498,7 +375,15 @@ void DeletSecurityFile(const string& Securityname) {
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if (i == 0)
+        {
+            cout << "успех" << endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
 
         cout << "Объект с именем " << Securityname << " успешно удален из файла." << endl;
     }
@@ -553,7 +438,15 @@ void DeletCleanerFile(const string& Cleanername) {
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if (i == 0)
+        {
+            cout << "успех" << endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
 
         cout << "Объект с именем " << Cleanername << " успешно удален из файла." << endl;
     }
@@ -611,7 +504,15 @@ void AddKillometrsDriver(const string& Drivername, float AddKilometrage)
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if (i == 0)
+        {
+            cout << "успех" << endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
 
         cout << "Объект с именем " << Drivername << " успешно удален из файла." << endl;
     }
@@ -668,7 +569,15 @@ void AddSalaryDriver(const string& Drivername)
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if (i == 0)
+        {
+            cout << "успех" << endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
 
         cout << "Объект с именем " << Drivername << " успешно удален из файла." << endl;
     }
@@ -726,7 +635,15 @@ void AddCoffeSecurity(const string& Securityname, int AddCoffe)
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if (i == 0)
+        {
+            cout << "успех" << endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
     }
     else {
         cout << "Ошибка открытия файла." << endl;
@@ -781,13 +698,20 @@ void AddSalarySecurity(const string& Securityname)
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if (i == 0)
+        {
+            cout << "успех" << endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
     }
     else {
         cout << "Ошибка открытия файла." << endl;
     }
 }
-
 // функции для уборщика
 void AddDonutCleaner(const string& Cleanername, int AddDonut)
 {
@@ -838,7 +762,15 @@ void AddDonutCleaner(const string& Cleanername, int AddDonut)
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if (i == 0)
+        {
+            cout << "успех" << endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
     }
     else {
         cout << "Ошибка открытия файла." << endl;
@@ -893,9 +825,276 @@ void AddSalaryCleaner(const string& Cleanername)
 
         // Перемещение содержимого временного файла в исходный файл
         remove(filename.c_str());
-        rename("Test.txt", filename.c_str());
+        int i = rename("Test.txt", filename.c_str());
+        if ( i == 0)
+        {
+            cout<<"успех"<< endl;
+        }
+        else
+        {
+            cout << "провал" << endl;
+        }
     }
     else {
         cout << "Ошибка открытия файла." << endl;
     }
 }
+// Метод записи данных в файл (Автобусы)
+
+void saveShuttleBusToFile(const ShuttleBus& obj)
+{
+    string path_driver = "shuttlebus.txt";
+    ofstream outfile(path_driver, ios::app); // Открываем файл в режиме добавления
+
+    if (outfile.is_open())
+    {
+        outfile << endl;
+        outfile << obj.GetId() << endl;
+        outfile << obj.GetYearOfManufacture() << endl;
+        outfile << obj.GetMarka() << endl;
+        outfile << obj.GetModel() << endl;
+        outfile << obj.GetTravel() << endl;
+        outfile << obj.GetPassengers() << endl;
+        outfile << obj.GetPurpose();
+        outfile.close();
+        cout << "фаил записан" << endl;
+    }
+    else
+    {
+        cout << "Ошибка открытия файла для записи!" << endl;
+    }
+}
+void saveFreightBusToFile(const FreightBus& obj)
+{
+    string path_driver = "freightbus.txt";
+    ofstream outfile(path_driver, ios::app); // Открываем файл в режиме добавления
+
+    if (outfile.is_open())
+    {
+        outfile << endl;
+        outfile << obj.GetId() << endl;
+        outfile << obj.GetYearOfManufacture() << endl;
+        outfile << obj.GetMarka() << endl;
+        outfile << obj.GetModel() << endl;
+        outfile << obj.GetTravel() << endl;
+        outfile << obj.GetCargo() << endl;
+        outfile << obj.GetPurpose();
+        outfile.close();
+        cout << "фаил записан" << endl;
+    }
+    else
+    {
+        cout << "Ошибка открытия файла для записи!" << endl;
+    }
+}
+void saveTouristBusToFile(const TouristBus& obj)
+{
+    string path_driver = "touristbus.txt";
+    ofstream outfile(path_driver, ios::app); // Открываем файл в режиме добавления
+
+    if (outfile.is_open())
+    {
+        outfile << endl;
+        outfile << obj.GetId() << endl;
+        outfile << obj.GetYearOfManufacture() << endl;
+        outfile << obj.GetMarka() << endl;
+        outfile << obj.GetModel() << endl;
+        outfile << obj.GetTravel() << endl;
+        outfile << obj.GetTicketPrice() << endl;
+        outfile << obj.GetTheEndPoint();
+        outfile.close();
+        cout << "фаил записан" << endl;
+    }
+    else
+    {
+        cout << "Ошибка открытия файла для записи!" << endl;
+    }
+}
+
+// Метод чтения данных из файла (Автобусы)
+
+void readShuttleBusFromFile()
+{
+    string fail_path = "shuttlebus.txt";
+    ifstream infile(fail_path);
+
+    //int count = 0;
+    //string name1;
+    string marka, model, purpose_shuttle, id;
+    int yearOfManufacture, travel, passengers;
+    if (infile.is_open())
+    {
+        /*
+        // Считываем количество записей
+        while (getline(infile, name1))
+        {
+            count++;
+        }
+        infile.close();
+
+
+        ifstream infile(fail_path);
+        count = count / 7;
+        // Считываем данные и создаем объекты
+        int i = 0;
+        */
+        while (getline(infile, id)) // string
+        {
+
+            if (infile.good()) // Проверка на успешное чтение
+            { 
+                
+                infile >> yearOfManufacture;
+                infile.ignore();
+                getline(infile, marka); // string
+                getline(infile, model);// string
+                infile >> travel>> passengers;
+                infile.ignore();
+                getline(infile, purpose_shuttle);
+
+                ShuttleBus obj(id, yearOfManufacture, marka, model, travel,  passengers, purpose_shuttle);
+                obj.Get_info();
+                cout << "---------------------------------" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+    }
+    else {
+        cout << "Ошибка открытия файла для чтения!" << endl;
+    }
+}
+void readFreightBusFromFile()
+{
+    string fail_path = "freightbus.txt";
+    ifstream infile(fail_path);
+    string marka, model, purpose, id;
+    int yearOfManufacture, travel, cargo;
+
+    if (infile.is_open())
+    {
+        while (getline(infile, id)) // string
+        {
+            if (infile.good()) // Проверка на успешное чтение
+            {
+                infile >> yearOfManufacture;
+                infile.ignore();
+                getline(infile, marka); // string
+                getline(infile, model);// string
+                infile >> travel>> cargo;
+                infile.ignore();
+                getline(infile, purpose);
+
+                FreightBus obj(id, yearOfManufacture, marka, model, travel,  cargo, purpose);
+                obj.Get_info();
+                cout << "---------------------------------" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+    }
+    else {
+        cout << "Ошибка открытия файла для чтения!" << endl;
+    }
+}
+void readTouristBusFromFile()
+{
+    string fail_path = "touristbus.txt";
+    ifstream infile(fail_path);
+    string marka, model,theEndPoint, id;
+    int yearOfManufacture, travel,ticketPrice;
+
+    if (infile.is_open())
+    {
+
+        while (getline(infile, id)) // string
+        {
+
+            if (infile.good()) // Проверка на успешное чтение
+            {
+                infile >> yearOfManufacture;
+                infile.ignore();
+                getline(infile, marka); // string
+                getline(infile, model);// string
+                infile >> travel >> ticketPrice;
+                infile.ignore();
+                getline(infile, theEndPoint);
+
+                TouristBus obj(id, yearOfManufacture, marka, model, travel,  ticketPrice, theEndPoint);
+                obj.Get_info();
+                cout << "---------------------------------" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+    }
+    else 
+    {
+        cout << "Ошибка открытия файла для чтения!" << endl;
+    }
+}
+// Метод для удаления объекта из файла по id (Автобусы)
+void DeletShuttleBusFile(string id_bus)
+{
+    string filename = "shuttlebus.txt";
+    ifstream infile(filename);
+    ofstream outfile("Test.txt");
+    string marka, model, purpose_shuttle, id;
+    int yearOfManufacture, travel, passengers;
+
+    if (infile.is_open() && outfile.is_open()) 
+    {
+        // Считываем данные объекта из файла
+        while (getline(infile, id)) // string
+        {
+            infile >> yearOfManufacture;
+            infile.ignore();
+            getline(infile, marka); // string
+            getline(infile, model);// string
+            infile >> travel >> passengers;
+            infile.ignore();
+            getline(infile, purpose_shuttle);
+
+            ShuttleBus obj(id, yearOfManufacture, marka, model, travel,  passengers, purpose_shuttle);
+            // Проверка, нужно ли удалять объект
+            if (obj.GetId() != id_bus) 
+            {
+                // Записываем объект в временный файл
+                outfile << obj.GetId() << endl;
+                outfile << obj.GetYearOfManufacture() << endl;
+                outfile << obj.GetTravel() << endl;
+                outfile << obj.GetMarka() << endl;
+                outfile << obj.GetModel() << endl;
+                outfile << obj.GetPassengers() << endl;
+                outfile << obj.GetPurpose() << endl;
+                outfile.close();
+                cout << "фаил записан" << endl;
+            }
+        }
+
+        infile.close();
+        outfile.close();
+
+        // Перемещение содержимого временного файла в исходный файл
+        remove(filename.c_str());
+        rename("Test.txt", filename.c_str());
+
+        cout << "Объект с именем " << id_bus << " успешно удален из файла." << endl;
+    }
+    else 
+    {
+        cout << "Ошибка открытия файла." << endl;
+    }
+}
+// функции для маршрутного автобуса
+// функции для грузового автобуса
+// функции для туристического автобуса

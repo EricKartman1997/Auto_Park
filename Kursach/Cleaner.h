@@ -17,7 +17,8 @@ public:
 
     Cleaner()
     {
-
+        Clear_room = 0;
+        Eaten_donuts = 0;
     }
 
     void Eat_donut(int num)

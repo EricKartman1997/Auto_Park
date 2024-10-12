@@ -1,36 +1,43 @@
 #pragma once
 #include "Bus.h"
-class ShuttleBus : public Bus
+class ShuttleBus :
+    public Bus
 {
 private:
+
     int Passengers;
-    string Purpose;
+    string Purpose_shuttle;
+
 public:
 
-    ShuttleBus(const int& yearOfManufacture, const string& marka, const string& model,
-        int travel, const int id, int passengers,string purpose):Bus(yearOfManufacture, marka, model,travel,id), Passengers(passengers), Purpose(purpose){}
+    ShuttleBus(const string& id, const int& yearOfManufacture, const string& marka, const string& model,
+        int travel,  int passengers, string purpose_shuttle)
+        : Bus(id,yearOfManufacture, marka, model, travel), Passengers(passengers), Purpose_shuttle(purpose_shuttle) {}
 
     ShuttleBus()
     {
+        Passengers = 0;
+        Purpose_shuttle = "";
 
     }
     void AddPassengers(int num)
     {
-        print_centered("Пассажиров проехавших на автобусе прибавлены");
+        cout << "Пассажиров проехавших на автобусе прибавлены" << endl;
         Passengers += num;
     }
-    void Get_info()
+    void const Get_info()
     {
         cout << "Id: " << GetId() << endl;
         cout << "Год выпуска: " << GetYearOfManufacture() << endl;
         cout << "Марка: " << GetMarka() << endl;
         cout << "Модель: " << GetModel() << endl;
         cout << "Количество выездов: " << GetTravel() << endl;
-        cout << "Количество пассажиров: " << Passengers << endl;
-        cout << "Последняя остановка: "  << Purpose << endl;
+        cout << "Количество пассажиров: " << GetPassengers() << endl;
+        cout << "Последняя остановка: " << GetPurpose() << endl;
     }
     int GetPassengers() const { return Passengers; }
-    string GetPurpose() const { return Purpose; }
+    string GetPurpose() const { return Purpose_shuttle; }
 
 };
+
 
