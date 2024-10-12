@@ -52,6 +52,8 @@ void AddTravelShuttleBus(string id_bus, int travel_bus);
 void AddPassengersShuttleBus(string id_bus, int passengers_bus);
 void AddTravelFreightBus(string id_bus, int travel_bus);
 void AddCargoPriceFreightBus(string id_bus, int cargo_bus);
+void AddTravelTouristBus(string id_bus, int travel_bus);
+void AddTicketPriceTouristBus(string id_bus, int ticketPrice_bus);
 
 
 

@@ -1380,6 +1380,7 @@ void AddPassengersShuttleBus(string id_bus, int passengers_bus)
         cout << "Ошибка открытия файла." << endl;
     }
 }
+// функции для грузового автобуса
 void AddTravelFreightBus(string id_bus, int travel_bus)
 {
     string filename = "freightbus.txt";
@@ -1522,5 +1523,148 @@ void AddCargoPriceFreightBus(string id_bus, int cargo_bus)
         cout << "Ошибка открытия файла." << endl;
     }
 }
-// функции для грузового автобуса
 // функции для туристического автобуса
+void AddTravelTouristBus(string id_bus, int travel_bus)
+{
+    string filename = "touristbus.txt";
+    ifstream infile(filename);
+    ofstream outfile;
+    outfile.open("Test.txt", ios::app);
+    string marka, model, theEndPoint, id;
+    int yearOfManufacture, travel, ticketPrice;
+
+    if (infile.is_open() && outfile.is_open())
+    {
+        // Считываем данные объекта из файла
+        while (getline(infile, id)) // string
+        {
+            if (infile.good()) // Проверка на успешное чтение
+            {
+                infile >> yearOfManufacture;
+                infile.ignore();
+                getline(infile, marka); // string
+                getline(infile, model);// string
+                infile >> travel >> ticketPrice;
+                infile.ignore();
+                getline(infile, theEndPoint);
+
+                TouristBus obj(id, yearOfManufacture, marka, model, travel, ticketPrice, theEndPoint);
+                if (obj.GetId() == id_bus)
+                {
+                    obj.AddTrip(travel_bus);
+                }
+                // Записываем объект в временный файл
+                outfile << obj.GetId() << endl;
+                outfile << obj.GetYearOfManufacture() << endl;
+                outfile << obj.GetMarka() << endl;
+                outfile << obj.GetModel() << endl;
+                outfile << obj.GetTravel() << endl;
+                outfile << obj.GetTicketPrice() << endl;
+                outfile << obj.GetTheEndPoint() << endl;
+                cout << "фаил записан" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+        outfile.close();
+
+        // Перемещение содержимого временного файла в исходный файл
+        if (remove(filename.c_str()) == 0)
+        {
+            //cout << "Файл " << filename << " успешно удален" << endl;
+        }
+        else
+        {
+            cerr << "Ошибка при удалении файла" << endl;
+        }
+        if (rename("Test.txt", filename.c_str()) == 0)
+        {
+            //cout << "Файл успешно переименован в " << filename << endl;
+        }
+        else
+        {
+            cout << "ОШИБКА - Файл не переименован в " << filename << endl;
+        }
+        print_centered("У автобуса успешно прибавлены поездки.");
+    }
+    else
+    {
+        cout << "Ошибка открытия файла." << endl;
+    }
+}
+void AddTicketPriceTouristBus(string id_bus, int ticketPrice_bus)
+{
+    string filename = "touristbus.txt";
+    ifstream infile(filename);
+    ofstream outfile;
+    outfile.open("Test.txt", ios::app);
+    string marka, model, theEndPoint, id;
+    int yearOfManufacture, travel, ticketPrice;
+
+    if (infile.is_open() && outfile.is_open())
+    {
+        // Считываем данные объекта из файла
+        while (getline(infile, id)) // string
+        {
+            if (infile.good()) // Проверка на успешное чтение
+            {
+                infile >> yearOfManufacture;
+                infile.ignore();
+                getline(infile, marka); // string
+                getline(infile, model);// string
+                infile >> travel >> ticketPrice;
+                infile.ignore();
+                getline(infile, theEndPoint);
+
+                TouristBus obj(id, yearOfManufacture, marka, model, travel, ticketPrice, theEndPoint);
+                if (obj.GetId() == id_bus)
+                {
+                    obj.AddTicketPrice(ticketPrice_bus);
+                }
+                // Записываем объект в временный файл
+                outfile << obj.GetId() << endl;
+                outfile << obj.GetYearOfManufacture() << endl;
+                outfile << obj.GetMarka() << endl;
+                outfile << obj.GetModel() << endl;
+                outfile << obj.GetTravel() << endl;
+                outfile << obj.GetTicketPrice() << endl;
+                outfile << obj.GetTheEndPoint() << endl;
+                cout << "фаил записан" << endl;
+            }
+            else {
+                cout << "Ошибка чтения" << endl;
+                break; // Прекращаем цикл при ошибке чтения
+            }
+        }
+        infile.close();
+        outfile.close();
+
+        // Перемещение содержимого временного файла в исходный файл
+        if (remove(filename.c_str()) == 0)
+        {
+            //cout << "Файл " << filename << " успешно удален" << endl;
+        }
+        else
+        {
+            cerr << "Ошибка при удалении файла" << endl;
+        }
+        if (rename("Test.txt", filename.c_str()) == 0)
+        {
+            //cout << "Файл успешно переименован в " << filename << endl;
+        }
+        else
+        {
+            cout << "ОШИБКА - Файл не переименован в " << filename << endl;
+        }
+        print_centered("У автобуса успешно прибавлены поездки.");
+    }
+    else
+    {
+        cout << "Ошибка открытия файла." << endl;
+    }
+}
+
+

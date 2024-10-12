@@ -710,7 +710,7 @@ int main()
 						cin >> time_variable_string;
 						print_centered("Введите сколько вы хотите прибавить поездок");
 						cin >> time_variable_int;
-						//AddTravelTouristBus(time_variable_string,time_variable_int);
+						AddTravelTouristBus(time_variable_string,time_variable_int);
 						system("pause");
 						break;
 					}
@@ -718,10 +718,10 @@ int main()
 					{
 						system("cls");
 						print_centered("Введите Id автобуса");
-						cin >> time_variable_int;
+						cin >> time_variable_string;
 						print_centered("Введите стоимость подорожания билета");
-						cin >> time_variable_int_2;
-						//AddTicketPriceTouristBus(time_variable_int,time_variable_int_2);
+						cin >> time_variable_int;
+						AddTicketPriceTouristBus(time_variable_string,time_variable_int);
 						system("pause");
 						break;
 					}
