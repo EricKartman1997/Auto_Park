@@ -1,18 +1,15 @@
 #pragma once
 #include <iostream>
 #include <string>
+//#include "Function.h"
 using namespace std;
 class Bus
 {
 private:
-	string Id;
-	int YearOfManufacture;
-	string Marka;
-	string Model;
-	int Travel;
+	string Id, Marka, Model;
+	int YearOfManufacture, Travel;
 
 public:
-
 	Bus(const string& id, const int& yearOfManufacture, const string& marka, const string& model,
 		int travel) :YearOfManufacture(yearOfManufacture), Id(id), Marka(marka), Model(model), Travel(travel){}
 
@@ -24,11 +21,13 @@ public:
 		Model = "0";
 		Travel = 0;
 	}
+
 	void AddTrip(int num)
 	{
-		cout << "Выезды на автобусе прибавлены" << endl;
 		Travel += num;
+		cout << "Выезды на автобусе прибавлены" << endl;
 	}
+
 	void Get_info()
 	{
 		cout << "Id: " << GetId() << endl;
@@ -37,6 +36,7 @@ public:
 		cout << "Модель: " << GetModel() << endl;
 		cout << "Количество выездов: " << GetTravel() << endl;
 	}
+
 	string GetId() const { return Id; }
 	int GetYearOfManufacture() const { return YearOfManufacture; }
 	int GetTravel() const { return Travel; }

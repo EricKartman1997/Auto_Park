@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <fstream>
+#include <stdio.h>
 #include <string>
 #include "Cleaner.h"
 #include "Driver.h"
@@ -10,7 +11,6 @@
 #include "ShuttleBus.h"
 #include "Bus.h"
 #include "Employee.h"
-#include < stdio.h >
 using namespace std;
 
 void print_centered(const string& text);
@@ -51,7 +51,7 @@ void DeletTouristBusFile(string id_bus);
 void AddTravelShuttleBus(string id_bus, int travel_bus);
 void AddPassengersShuttleBus(string id_bus, int passengers_bus);
 void AddTravelFreightBus(string id_bus, int travel_bus);
-void AddCargoPriceFreightBus(string id_bus, int cargo_bus);
+void AddCargoFreightBus(string id_bus, int cargo_bus);
 void AddTravelTouristBus(string id_bus, int travel_bus);
 void AddTicketPriceTouristBus(string id_bus, int ticketPrice_bus);
 

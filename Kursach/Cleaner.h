@@ -3,8 +3,7 @@
 class Cleaner : public Employee
 {
 private:
-    int Clear_room;
-    int Eaten_donuts;
+    int Clear_room, Eaten_donuts;
 
 public:
 
@@ -38,8 +37,8 @@ public:
         cout << "Номер телефона: " << GetPhone_namber() << endl;
         cout << "Зарплата: " << GetSalary() << endl;
         cout << "Наличные: " << GetMoney() << endl;
-        cout << "Вымыто комнат: " << Clear_room << endl;
-        cout << "Съедено пончиков: " << Eaten_donuts << endl;
+        cout << "Вымыто комнат: " << GetClear_room() << endl;
+        cout << "Съедено пончиков: " << GetEaten_donuts() << endl;
     }
     int GetClear_room() const { return Clear_room; }
     int GetEaten_donuts() const { return Eaten_donuts; }

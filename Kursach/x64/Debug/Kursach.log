@@ -1,5 +1,2 @@
-﻿  Function.cpp
-C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\Kursach\Function.cpp(10,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  Kursach.cpp
-  Создание кода...
+﻿  Kursach.cpp
   Kursach.vcxproj -> C:\Users\mxalk\OneDrive\Рабочий стол\repos\Kursach\x64\Debug\Kursach.exe

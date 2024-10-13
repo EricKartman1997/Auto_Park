@@ -3,8 +3,7 @@
 class Security : public Employee
 {
 private: 
-    int Verified_person;
-    int Coffe_drink;
+    int Verified_person, Coffe_drink;
 
 public:
 
@@ -38,8 +37,8 @@ public:
         cout << "Номер телефона: " << GetPhone_namber() << endl;
         cout << "Зарплата: " << GetSalary() << endl;
         cout << "Наличные: " << GetMoney() << endl;
-        cout << "Проверенно человек: " << Verified_person << endl;
-        cout << "Выпито коффе: " << Coffe_drink << endl;
+        cout << "Проверенно человек: " << GetVerified_person() << endl;
+        cout << "Выпито коффе: " << GetCoffe_drink() << endl;
     }
     int GetVerified_person() const { return Verified_person; }
     int GetCoffe_drink() const { return Coffe_drink; }

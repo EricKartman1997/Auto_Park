@@ -38,8 +38,8 @@ public:
         cout << "Номер телефона: " << GetPhone_namber() << endl;
         cout << "Зарплата: " << GetSalary() << endl;
         cout << "Наличные: " << GetMoney() << endl;
-        cout << "Стаж вождения: " << Experience << endl;
-        cout << "Пройдено киллометров: " << Kilometrage << endl;
+        cout << "Стаж вождения: " << GetExperience() << endl;
+        cout << "Пройдено киллометров: " << GetKilometrage() << endl;
     }
     int GetExperience() const { return Experience; }
     float GetKilometrage() const { return Kilometrage; }

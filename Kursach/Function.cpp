@@ -35,7 +35,7 @@ void saveDriverToFile(const Driver& driver)
         outfile << driver.GetExperience() << endl;
         outfile << driver.GetKilometrage() << endl;
         outfile.close();
-        cout << "фаил записан" << endl;
+        //cout << "фаил записан" << endl;
     }
     else 
     {
@@ -64,7 +64,7 @@ void saveSecurityToFile(const Security& security)
         outfile << security.GetVerified_person() << endl;
         outfile << security.GetCoffe_drink() << endl;
         outfile.close();
-        cout << "фаил записан" << endl;
+        //cout << "фаил записан" << endl;
     }
     else
     {
@@ -93,7 +93,7 @@ void saveCleanerToFile(const Cleaner& cleaner)
         outfile << cleaner.GetClear_room() << endl;
         outfile << cleaner.GetEaten_donuts() << endl;
         outfile.close();
-        cout << "фаил записан" << endl;
+        //cout << "фаил записан" << endl;
     }
     else
     {
@@ -109,24 +109,10 @@ void readDriversFromFile()
 
     if (infile.is_open()) 
     {
-        string name1;
         string name, surname, patronymic, phone_number, gender;
         int day, month, year, age, experience, opening_hours;
         float salary, money, kilometrage;
-        
 
-        // Считываем количество записей
-        while (getline(infile, name1))
-        {
-            count++;
-        }
-        infile.close();
-
-
-        ifstream infile(fail_path);
-        count = count / 14;
-        // Считываем данные и создаем объекты
-        
         while (getline(infile, name)) // string
         {
             
@@ -163,23 +149,11 @@ void readSecuritiesFromFile()
 
     if (infile.is_open())
     {
-        string name1;
         string name, surname, patronymic, phone_number, gender;
         int day, month, year, age, verified_person, opening_hours, coffe_drink;
         float salary, money;
 
-
-        // Считываем количество записей
-        while (getline(infile, name1))
-        {
-            count++;
-        }
-        infile.close();
-
-
-        ifstream infile(fail_path);
-        count = count / 14;
-        // Считываем данные и создаем объекты
+ 
 
         while (getline(infile, name)) // string
         {
@@ -217,23 +191,9 @@ void readCleanersFromFile()
 
     if (infile.is_open())
     {
-        string name1;
         string name, surname, patronymic, phone_number, gender;
         int day, month, year, age, clear_room, opening_hours, eaten_donuts;
         float salary, money;
-
-
-        // Считываем количество записей
-        while (getline(infile, name1))
-        {
-            count++;
-        }
-        infile.close();
-
-
-        ifstream infile(fail_path);
-        count = count / 14;
-        // Считываем данные и создаем объекты
 
         while (getline(infile, name)) // string
         {
@@ -264,7 +224,8 @@ void readCleanersFromFile()
     }
 }
 // Метод для удаления объекта из файла по имени
-void DeletDriverFile(const string& Drivername) {
+void DeletDriverFile(const string& Drivername) 
+{
     string filename = "driver.txt";
     ifstream infile(filename);
     ofstream outfile("Test.txt");
@@ -303,7 +264,7 @@ void DeletDriverFile(const string& Drivername) {
                 outfile << driver.GetMoney() << endl;
                 outfile << driver.GetExperience() << endl;
                 outfile << driver.GetKilometrage() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
         }
 
@@ -315,14 +276,14 @@ void DeletDriverFile(const string& Drivername) {
         int i = rename("Test.txt", filename.c_str());
         if (i == 0)
         {
-            cout << "успех" << endl;
+            //cout << "успех" << endl;
         }
         else
         {
             cout << "провал" << endl;
         }
 
-        cout << "Объект с именем " << Drivername << " успешно удален из файла." << endl;
+        print_centered("Водитель успешно удален из файла.");
     }
     else {
         cout << "Ошибка открытия файла." << endl;
@@ -366,7 +327,7 @@ void DeletSecurityFile(const string& Securityname) {
                 outfile << obj.GetMoney() << endl;
                 outfile << obj.GetVerified_person() << endl;
                 outfile << obj.GetCoffe_drink() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
         }
 
@@ -378,14 +339,14 @@ void DeletSecurityFile(const string& Securityname) {
         int i = rename("Test.txt", filename.c_str());
         if (i == 0)
         {
-            cout << "успех" << endl;
+            //cout << "успех" << endl;
         }
         else
         {
             cout << "провал" << endl;
         }
 
-        cout << "Объект с именем " << Securityname << " успешно удален из файла." << endl;
+        print_centered("Охраник успешно удален из файла.");
     }
     else {
         cout << "Ошибка открытия файла." << endl;
@@ -429,7 +390,7 @@ void DeletCleanerFile(const string& Cleanername) {
                 outfile << obj.GetMoney() << endl;
                 outfile << obj.GetClear_room() << endl;
                 outfile << obj.GetEaten_donuts() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
         }
 
@@ -441,14 +402,14 @@ void DeletCleanerFile(const string& Cleanername) {
         int i = rename("Test.txt", filename.c_str());
         if (i == 0)
         {
-            cout << "успех" << endl;
+            //cout << "успех" << endl;
         }
         else
         {
             cout << "провал" << endl;
         }
 
-        cout << "Объект с именем " << Cleanername << " успешно удален из файла." << endl;
+        print_centered("Уборщик успешно удален из файла.");
     }
     else {
         cout << "Ошибка открытия файла." << endl;
@@ -507,14 +468,13 @@ void AddKillometrsDriver(const string& Drivername, float AddKilometrage)
         int i = rename("Test.txt", filename.c_str());
         if (i == 0)
         {
-            cout << "успех" << endl;
+            //cout << "успех" << endl;
         }
         else
         {
             cout << "провал" << endl;
         }
 
-        cout << "Объект с именем " << Drivername << " успешно удален из файла." << endl;
     }
     else {
         cout << "Ошибка открытия файла." << endl;
@@ -572,14 +532,14 @@ void AddSalaryDriver(const string& Drivername)
         int i = rename("Test.txt", filename.c_str());
         if (i == 0)
         {
-            cout << "успех" << endl;
+            //cout << "успех" << endl;
         }
         else
         {
             cout << "провал" << endl;
         }
 
-        cout << "Объект с именем " << Drivername << " успешно удален из файла." << endl;
+        
     }
     else {
         cout << "Ошибка открытия файла." << endl;
@@ -638,7 +598,7 @@ void AddCoffeSecurity(const string& Securityname, int AddCoffe)
         int i = rename("Test.txt", filename.c_str());
         if (i == 0)
         {
-            cout << "успех" << endl;
+            //cout << "успех" << endl;
         }
         else
         {
@@ -701,7 +661,7 @@ void AddSalarySecurity(const string& Securityname)
         int i = rename("Test.txt", filename.c_str());
         if (i == 0)
         {
-            cout << "успех" << endl;
+            //cout << "успех" << endl;
         }
         else
         {
@@ -765,7 +725,7 @@ void AddDonutCleaner(const string& Cleanername, int AddDonut)
         int i = rename("Test.txt", filename.c_str());
         if (i == 0)
         {
-            cout << "успех" << endl;
+            //cout << "успех" << endl;
         }
         else
         {
@@ -828,7 +788,7 @@ void AddSalaryCleaner(const string& Cleanername)
         int i = rename("Test.txt", filename.c_str());
         if ( i == 0)
         {
-            cout<<"успех"<< endl;
+            //cout<<"успех"<< endl;
         }
         else
         {
@@ -839,8 +799,8 @@ void AddSalaryCleaner(const string& Cleanername)
         cout << "Ошибка открытия файла." << endl;
     }
 }
-// Метод записи данных в файл (Автобусы)
 
+// Метод записи данных в файл (Автобусы)
 void saveShuttleBusToFile(const ShuttleBus& obj)
 {
     string path_driver = "shuttlebus.txt";
@@ -856,7 +816,7 @@ void saveShuttleBusToFile(const ShuttleBus& obj)
         outfile << obj.GetPassengers() << endl;
         outfile << obj.GetPurpose() << endl;
         outfile.close();
-        cout << "фаил записан" << endl;
+        //cout << "фаил записан" << endl;
     }
     else
     {
@@ -878,7 +838,7 @@ void saveFreightBusToFile(const FreightBus& obj)
         outfile << obj.GetCargo() << endl;
         outfile << obj.GetPurpose() << endl;
         outfile.close();
-        cout << "фаил записан" << endl;
+        //cout << "фаил записан" << endl;
     }
     else
     {
@@ -900,7 +860,7 @@ void saveTouristBusToFile(const TouristBus& obj)
         outfile << obj.GetTicketPrice() << endl;
         outfile << obj.GetTheEndPoint() << endl;
         outfile.close();
-        cout << "фаил записан" << endl;
+        //cout << "фаил записан" << endl;
     }
     else
     {
@@ -909,7 +869,6 @@ void saveTouristBusToFile(const TouristBus& obj)
 }
 
 // Метод чтения данных из файла (Автобусы)
-
 void readShuttleBusFromFile()
 {
     string fail_path = "shuttlebus.txt";
@@ -937,14 +896,16 @@ void readShuttleBusFromFile()
                 obj.Get_info();
                 cout << "---------------------------------" << endl;
             }
-            else {
+            else 
+            {
                 cout << "Ошибка чтения" << endl;
                 break; // Прекращаем цикл при ошибке чтения
             }
         }
         infile.close();
     }
-    else {
+    else 
+    {
         cout << "Ошибка открытия файла для чтения!" << endl;
     }
 }
@@ -973,14 +934,16 @@ void readFreightBusFromFile()
                 obj.Get_info();
                 cout << "---------------------------------" << endl;
             }
-            else {
+            else 
+            {
                 cout << "Ошибка чтения" << endl;
                 break; // Прекращаем цикл при ошибке чтения
             }
         }
         infile.close();
     }
-    else {
+    else 
+    {
         cout << "Ошибка открытия файла для чтения!" << endl;
     }
 }
@@ -1011,7 +974,8 @@ void readTouristBusFromFile()
                 obj.Get_info();
                 cout << "---------------------------------" << endl;
             }
-            else {
+            else 
+            {
                 cout << "Ошибка чтения" << endl;
                 break; // Прекращаем цикл при ошибке чтения
             }
@@ -1028,8 +992,7 @@ void DeletShuttleBusFile(string id_bus)
 {
     string filename = "shuttlebus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt",ios :: app);
+    ofstream outfile("Test.txt");
     string marka, model, purpose_shuttle, id;
     int yearOfManufacture, travel, passengers;
 
@@ -1060,10 +1023,11 @@ void DeletShuttleBusFile(string id_bus)
                     outfile << obj.GetTravel() << endl;
                     outfile << obj.GetPassengers() << endl;
                     outfile << obj.GetPurpose() << endl;
-                    cout << "фаил записан" << endl;
+                    //cout << "фаил записан" << endl;
                 }
             }
-            else {
+            else 
+            {
                 cout << "Ошибка чтения" << endl;
                 break; // Прекращаем цикл при ошибке чтения
             }
@@ -1074,7 +1038,7 @@ void DeletShuttleBusFile(string id_bus)
         // Перемещение содержимого временного файла в исходный файл
         if (remove(filename.c_str()) == 0)
         {
-            cout << "Файл " << filename << " успешно удален" << endl;
+            //cout << "Файл " << filename << " успешно удален" << endl;
         }
         else
         {
@@ -1082,13 +1046,13 @@ void DeletShuttleBusFile(string id_bus)
         }
         if (rename("Test.txt", filename.c_str()) == 0)
         {
-            cout << "Файл успешно переименован в " << filename << endl;
+            //cout << "Файл успешно переименован в " << filename << endl;
         }
         else
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("Объект успешно удален из файла.");
+        print_centered("Маршрутный автобус успешно удален из файла.");
     }
     else 
     {
@@ -1099,8 +1063,7 @@ void DeletFreightBusFile(string id_bus)
 {
     string filename = "freightbus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt", ios::app);
+    ofstream outfile("Test.txt");
     string marka, model, purpose, id;
     int yearOfManufacture, travel, cargo;
 
@@ -1130,10 +1093,11 @@ void DeletFreightBusFile(string id_bus)
                     outfile << obj.GetTravel() << endl;
                     outfile << obj.GetCargo() << endl;
                     outfile << obj.GetPurpose() << endl;
-                    cout << "фаил записан" << endl;
+                    //cout << "фаил записан" << endl;
                 }
             }
-            else {
+            else 
+            {
                 cout << "Ошибка чтения" << endl;
                 break; // Прекращаем цикл при ошибке чтения
             }
@@ -1144,7 +1108,7 @@ void DeletFreightBusFile(string id_bus)
         // Перемещение содержимого временного файла в исходный файл
         if (remove(filename.c_str()) == 0)
         {
-            cout << "Файл " << filename << " успешно удален" << endl;
+            //cout << "Файл " << filename << " успешно удален" << endl;
         }
         else
         {
@@ -1158,7 +1122,7 @@ void DeletFreightBusFile(string id_bus)
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("Объект успешно удален из файла.");
+        print_centered("Грузовой автобус успешно удален из файла.");
     }
     else
     {
@@ -1169,8 +1133,7 @@ void DeletTouristBusFile(string id_bus)
 {
     string filename = "touristbus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt", ios::app);
+    ofstream outfile("Test.txt");
     string marka, model, theEndPoint, id;
     int yearOfManufacture, travel, ticketPrice;
 
@@ -1200,7 +1163,7 @@ void DeletTouristBusFile(string id_bus)
                     outfile << obj.GetTravel() << endl;
                     outfile << obj.GetTicketPrice() << endl;
                     outfile << obj.GetTheEndPoint() << endl;
-                    cout << "фаил записан" << endl;
+                    //cout << "фаил записан" << endl;
                 }
             }
             else {
@@ -1214,7 +1177,7 @@ void DeletTouristBusFile(string id_bus)
         // Перемещение содержимого временного файла в исходный файл
         if (remove(filename.c_str()) == 0)
         {
-            cout << "Файл " << filename << " успешно удален" << endl;
+            //cout << "Файл " << filename << " успешно удален" << endl;
         }
         else
         {
@@ -1222,13 +1185,13 @@ void DeletTouristBusFile(string id_bus)
         }
         if (rename("Test.txt", filename.c_str()) == 0)
         {
-            cout << "Файл успешно переименован в " << filename << endl;
+            //cout << "Файл успешно переименован в " << filename << endl;
         }
         else
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("Объект успешно удален из файла.");
+        print_centered("Туристический автобус успешно удален из файла.");
     }
     else
     {
@@ -1240,8 +1203,7 @@ void AddTravelShuttleBus(string id_bus,int travel_bus)
 {
     string filename = "shuttlebus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt", ios::app);
+    ofstream outfile("Test.txt");
     string marka, model, purpose_shuttle, id;
     int yearOfManufacture, travel, passengers;
 
@@ -1274,9 +1236,10 @@ void AddTravelShuttleBus(string id_bus,int travel_bus)
                 outfile << obj.GetTravel() << endl;
                 outfile << obj.GetPassengers() << endl;
                 outfile << obj.GetPurpose() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
-            else {
+            else 
+            {
                 cout << "Ошибка чтения" << endl;
                 break; // Прекращаем цикл при ошибке чтения
             }
@@ -1287,7 +1250,7 @@ void AddTravelShuttleBus(string id_bus,int travel_bus)
         // Перемещение содержимого временного файла в исходный файл
         if (remove(filename.c_str()) == 0)
         {
-            cout << "Файл " << filename << " успешно удален" << endl;
+            //cout << "Файл " << filename << " успешно удален" << endl;
         }
         else
         {
@@ -1295,13 +1258,13 @@ void AddTravelShuttleBus(string id_bus,int travel_bus)
         }
         if (rename("Test.txt", filename.c_str()) == 0)
         {
-            cout << "Файл успешно переименован в " << filename << endl;
+            //cout << "Файл успешно переименован в " << filename << endl;
         }
         else
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("К объекту успешно прибавлены поездки.");
+        
     }
     else
     {
@@ -1312,8 +1275,7 @@ void AddPassengersShuttleBus(string id_bus, int passengers_bus)
 {
     string filename = "shuttlebus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt", ios::app);
+    ofstream outfile("Test.txt");
     string marka, model, purpose_shuttle, id;
     int yearOfManufacture, travel, passengers;
 
@@ -1346,7 +1308,7 @@ void AddPassengersShuttleBus(string id_bus, int passengers_bus)
                 outfile << obj.GetTravel() << endl;
                 outfile << obj.GetPassengers() << endl;
                 outfile << obj.GetPurpose() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
             else {
                 cout << "Ошибка чтения" << endl;
@@ -1359,7 +1321,7 @@ void AddPassengersShuttleBus(string id_bus, int passengers_bus)
         // Перемещение содержимого временного файла в исходный файл
         if (remove(filename.c_str()) == 0)
         {
-            cout << "Файл " << filename << " успешно удален" << endl;
+            //cout << "Файл " << filename << " успешно удален" << endl;
         }
         else
         {
@@ -1367,13 +1329,13 @@ void AddPassengersShuttleBus(string id_bus, int passengers_bus)
         }
         if (rename("Test.txt", filename.c_str()) == 0)
         {
-            cout << "Файл успешно переименован в " << filename << endl;
+            //cout << "Файл успешно переименован в " << filename << endl;
         }
         else
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("К объекту успешно прибавлены пассажиры.");
+        
     }
     else
     {
@@ -1385,8 +1347,7 @@ void AddTravelFreightBus(string id_bus, int travel_bus)
 {
     string filename = "freightbus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt", ios::app);
+    ofstream outfile("Test.txt");
     string marka, model, purpose, id;
     int yearOfManufacture, travel, cargo;
 
@@ -1418,7 +1379,7 @@ void AddTravelFreightBus(string id_bus, int travel_bus)
                 outfile << obj.GetTravel() << endl;
                 outfile << obj.GetCargo() << endl;
                 outfile << obj.GetPurpose() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
             else {
                 cout << "Ошибка чтения" << endl;
@@ -1445,19 +1406,18 @@ void AddTravelFreightBus(string id_bus, int travel_bus)
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("У автобуса успешно прибавлены поездки.");
+
     }
     else
     {
         cout << "Ошибка открытия файла." << endl;
     }
 }
-void AddCargoPriceFreightBus(string id_bus, int cargo_bus)
+void AddCargoFreightBus(string id_bus, int cargo_bus)
 {
     string filename = "freightbus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt", ios::app);
+    ofstream outfile("Test.txt");
     string marka, model, purpose, id;
     int yearOfManufacture, travel, cargo;
 
@@ -1489,7 +1449,7 @@ void AddCargoPriceFreightBus(string id_bus, int cargo_bus)
                 outfile << obj.GetTravel() << endl;
                 outfile << obj.GetCargo() << endl;
                 outfile << obj.GetPurpose() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
             else {
                 cout << "Ошибка чтения" << endl;
@@ -1516,7 +1476,7 @@ void AddCargoPriceFreightBus(string id_bus, int cargo_bus)
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("У автобуса успешно прибавлены поездки.");
+        
     }
     else
     {
@@ -1528,8 +1488,7 @@ void AddTravelTouristBus(string id_bus, int travel_bus)
 {
     string filename = "touristbus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt", ios::app);
+    ofstream outfile("Test.txt");
     string marka, model, theEndPoint, id;
     int yearOfManufacture, travel, ticketPrice;
 
@@ -1561,7 +1520,7 @@ void AddTravelTouristBus(string id_bus, int travel_bus)
                 outfile << obj.GetTravel() << endl;
                 outfile << obj.GetTicketPrice() << endl;
                 outfile << obj.GetTheEndPoint() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
             else {
                 cout << "Ошибка чтения" << endl;
@@ -1588,7 +1547,7 @@ void AddTravelTouristBus(string id_bus, int travel_bus)
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("У автобуса успешно прибавлены поездки.");
+        
     }
     else
     {
@@ -1599,8 +1558,7 @@ void AddTicketPriceTouristBus(string id_bus, int ticketPrice_bus)
 {
     string filename = "touristbus.txt";
     ifstream infile(filename);
-    ofstream outfile;
-    outfile.open("Test.txt", ios::app);
+    ofstream outfile("Test.txt");
     string marka, model, theEndPoint, id;
     int yearOfManufacture, travel, ticketPrice;
 
@@ -1632,7 +1590,7 @@ void AddTicketPriceTouristBus(string id_bus, int ticketPrice_bus)
                 outfile << obj.GetTravel() << endl;
                 outfile << obj.GetTicketPrice() << endl;
                 outfile << obj.GetTheEndPoint() << endl;
-                cout << "фаил записан" << endl;
+                //cout << "фаил записан" << endl;
             }
             else {
                 cout << "Ошибка чтения" << endl;
@@ -1659,7 +1617,7 @@ void AddTicketPriceTouristBus(string id_bus, int ticketPrice_bus)
         {
             cout << "ОШИБКА - Файл не переименован в " << filename << endl;
         }
-        print_centered("У автобуса успешно прибавлены поездки.");
+
     }
     else
     {

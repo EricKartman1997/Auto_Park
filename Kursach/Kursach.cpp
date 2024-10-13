@@ -11,6 +11,7 @@
 #include "Bus.h"
 using namespace std;
 
+//временные переменные
 int choise;
 int time_variable_int, time_variable_int_2;
 float time_variable_float;
@@ -25,20 +26,17 @@ float money, salary, kilometrage;
 string marka, model, purpose_shuttle, purpose, theEndPoint, id;
 int yearOfManufacture, travel, passengers, cargo, ticketPrice;
 
-string path_bus = "bus.txt";
-
 int main()
 {
-	SetConsoleCP(1251);//установка кодовой стран
-	SetConsoleOutputCP(1251);//установка
-	//setlocale(LC_ALL, "Russian");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	bool Run = true;
 	while (Run)
 	{
 		system("cls");
 		print_centered("Здравствуйте вы вошли  в программу Парка Автобусов");
 		print_centered("Выберите пункт");
-		print_centered("Работники - 1  Автобусы - 2 Выйти - 3");
+		print_centered("Сотрудники - 1  Автобусы - 2 Выйти - 3");
 
 		cin >> choise;
 		switch (choise)
@@ -46,7 +44,7 @@ int main()
 		case 1: // Работники
 		{
 			system("cls");
-			print_centered("Создать - 1 Уволить - 2 Просмотреть картотеку - 3 Функции - 4 Назад - 5");
+			print_centered("Создать - 1 Уволить - 2 Просмотреть сотрудников - 3 Действия по сотрудникам - 4 Назад - 5");
 			cin >> choise;
 			switch (choise)
 			{
@@ -255,17 +253,17 @@ int main()
 			case 3: //просмотр работников
 			{
 				system("cls");
-				cout << "             Drivers" << endl;
+				cout << "             Водители" << endl;
 				cout << "---------------------------------" << endl;
 				readDriversFromFile();
 
 				cout << endl;
-				cout << "             Security" << endl;
+				cout << "             Охраники" << endl;
 				cout << "---------------------------------" << endl;
 				readSecuritiesFromFile();
 
 				cout << endl;
-				cout << "            Cleaners" << endl;
+				cout << "            Уборщики" << endl;
 				cout << "---------------------------------" << endl;
 				readCleanersFromFile();
 				system("pause");
@@ -281,7 +279,7 @@ int main()
 				{
 				case 1: // водитель
 				{
-					print_centered("Выдать зарплату - 1  Добавить километры - 2 Вернуться назад - 3");
+					print_centered("Выдать зарплату - 1  Изменить пробег - 2 Вернуться назад - 3");
 					cin >> choise;
 					switch (choise)
 					{
@@ -295,7 +293,7 @@ int main()
 					}
 					case 2:// Добавить киллометры
 					{
-						print_centered("Введите имя водителя, которому вы хотите прибавить киллометры");
+						print_centered("Введите имя водителя, которому вы хотите изменить пробег");
 						cin >> time_variable_string;
 						print_centered("Введите сколько киллометров вы хотите прибавить водителю");
 						cin >> time_variable_float;
@@ -318,7 +316,7 @@ int main()
 				}
 				case 2: // охраник
 				{
-					print_centered("Выдать зарплату - 1  Прбавить чашки кофе - 2 Вернуться назад - 3");
+					print_centered("Выдать зарплату - 1  Изменить колличество выпитых чашек кофе - 2 Вернуться назад - 3");
 					cin >> choise;
 					switch (choise)
 					{
@@ -332,7 +330,7 @@ int main()
 					}
 					case 2:// Добавить чашки с коффе
 					{
-						print_centered("Введите имя охраника, которому вы хотите прибавить чашки с коффе");
+						print_centered("Введите имя охраника, которому вы хотите изменить колличество выпитых чашек кофе");
 						cin >> time_variable_string;
 						print_centered("Введите сколько чашек вы хотите прибавить охранику");
 						cin >> time_variable_int;
@@ -355,7 +353,7 @@ int main()
 				}
 				case 3: // уборщик
 				{
-					print_centered("Выдать зарплату - 1  Добавить съединых пончиков - 2 Вернуться назад - 3");
+					print_centered("Выдать зарплату - 1  Изменить колличество съединых пончиков - 2 Вернуться назад - 3");
 					cin >> choise;
 					switch (choise)
 					{
@@ -369,7 +367,7 @@ int main()
 					}
 					case 2:// Добавить съединых пончиков
 					{
-						print_centered("Введите имя уборщика, которому вы хотите прибавить съединых пончиков");
+						print_centered("Введите имя уборщика, которому вы хотите изменить колличество съединых пончиков");
 						cin >> time_variable_string;
 						print_centered("Введите сколько пончиков вы хотите прибавить уборщику");
 						cin >> time_variable_int;
@@ -392,7 +390,6 @@ int main()
 				}
 				case 4: // назад
 				{
-					cout << " Назад\n";
 					break;
 				}
 				default:
@@ -420,7 +417,7 @@ int main()
 		{
 			system("cls");
 			print_centered("Создание автобусов");
-			print_centered("Создать - 1 Списать - 2 Просмотреть список автобусов - 3 Функции - 4 Назад - 5");
+			print_centered("Создать - 1 Списать - 2 Просмотреть список автобусов - 3 Действия с автобусами - 4 Назад - 5");
 			cin >> choise;
 			switch (choise)
 			{
@@ -445,7 +442,6 @@ int main()
 					cin >> model;
 					print_centered("Количество выездов: ");
 					cin >> travel;
-
 					print_centered("Введите количество пассажиров: ");
 					cin >> passengers;
 					print_centered("Последняя остановка:  ");
@@ -475,7 +471,6 @@ int main()
 					cin >> model;
 					print_centered("Количество выездов: ");
 					cin >> travel;
-
 					print_centered("Введите количество груза: ");
 					cin >> cargo;
 					print_centered("Цель поездки (город): ");
@@ -505,7 +500,6 @@ int main()
 					cin >> model;
 					print_centered("Количество выездов: ");
 					cin >> travel;
-
 					print_centered("Стоимость билета: ");
 					cin >> ticketPrice;
 					print_centered("Конечная станция: ");
@@ -588,17 +582,17 @@ int main()
 			case 3: //Просмотреть список автобусов 
 			{
 				system("cls");
-				cout << "             ShuttleBus" << endl;
-				cout << "---------------------------------" << endl;
+				cout << "       Маршрутные автобусы" << endl;
+				cout << "----------------------------------" << endl;
 				readShuttleBusFromFile();
 
 				cout << endl;
-				cout << "             FreightBus" << endl;
-				cout << "---------------------------------" << endl;
+				cout << "        Грузовые автобусы" << endl;
+				cout << "----------------------------------" << endl;
 				readFreightBusFromFile();
 
 				cout << endl;
-				cout << "            TouristBus" << endl;
+				cout << "     Туристические автобусы" << endl;
 				cout << "---------------------------------" << endl;
 				readTouristBusFromFile();
 				system("pause");
@@ -606,7 +600,7 @@ int main()
 				break;
 
 			}
-			case 4: //Функции 
+			case 4: //Действия с автобусами 
 			{
 				system("cls");
 				print_centered("Маршрутный - 1  Грузовой - 2 Туристический - 3 Вернуться назад - 4");
@@ -615,7 +609,7 @@ int main()
 				{
 				case 1: //Маршрутный
 				{
-					print_centered("Выезд автобуса из автопарка - 1  Занести в картотеку пассажиров проехавших на автобусе - 2 Вернуться назад - 3");
+					print_centered("Выезд автобуса из автопарка - 1  Изменить количество пассажиров - 2 Вернуться назад - 3");
 					cin >> choise;
 					switch (choise)
 					{
@@ -624,7 +618,7 @@ int main()
 						system("cls");
 						print_centered("Введите Id автобуса");
 						cin >> time_variable_string;
-						print_centered("Введите сколько вы хотите прибавить поездок");
+						print_centered("Введите сколько вы хотите прибавить выездов");
 						cin >> time_variable_int;
 						AddTravelShuttleBus(time_variable_string, time_variable_int);
 						system("pause");
@@ -679,7 +673,7 @@ int main()
 						cin >> time_variable_string;
 						print_centered("Введите количество груза");
 						cin >> time_variable_int;
-						AddCargoPriceFreightBus(time_variable_string,time_variable_int);
+						AddCargoFreightBus(time_variable_string,time_variable_int);
 						system("pause");
 						break;
 					}

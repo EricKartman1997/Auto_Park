@@ -47,8 +47,8 @@ public:
     */
     void Get_salary()
     {
-        cout << "Зараплата получена: " << Salary << endl;
         Money += Salary;
+        cout << "Зараплата получена: " << Salary << endl;
     }
     void Get_info()
     {
