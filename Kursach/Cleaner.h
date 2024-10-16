@@ -13,18 +13,19 @@ public:
         float money, int clear_room, int eaten_donuts)
         : Employee(name, surname, patronymic, gender, day, month, year, age, opening_hours, phone_namber, salary, money),
         Clear_room(clear_room), Eaten_donuts(eaten_donuts) {}
-
+    
     Cleaner()
     {
         Clear_room = 0;
         Eaten_donuts = 0;
     }
-
+    // изменяет количество съединых пончиков
     void Eat_donut(int num)
     {
         Eaten_donuts += num;
         cout << "Уборщик " << GetSurname() << " " << GetName() << " " << GetPatronymic() << " съел " << num << " пончика" << endl;
     }
+    // выводит на экран информацию
     void Get_info()
     {
         cout << "Имя: " << GetName() << endl;
@@ -40,7 +41,9 @@ public:
         cout << "Вымыто комнат: " << GetClear_room() << endl;
         cout << "Съедено пончиков: " << GetEaten_donuts() << endl;
     }
+    // возвращет количество вымытых комнат
     int GetClear_room() const { return Clear_room; }
+    // возвращает количество съединых пончиков
     int GetEaten_donuts() const { return Eaten_donuts; }
 };
 

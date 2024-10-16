@@ -16,13 +16,13 @@ public:
         Cargo = 0;
         Purpose = "";
     }
-
+    // изменяет количество груза
     void AddCargo(int num)
     {
         Cargo += num;
         cout << "Количество груза изменено"<< endl;
     }
-
+    // выводит на экран информацию
     void Get_info()
     {
         cout << "Id: " << GetId() << endl;
@@ -33,8 +33,9 @@ public:
         cout << "Количество груза: " << GetCargo() << endl;
         cout << "Цель поездки (город): " << GetPurpose() << endl;
     }
-
+    // возвращает количество груза
     int GetCargo() const { return Cargo; }
+    // возвращает цель маршрута
     string GetPurpose() const { return Purpose; }
 
 };

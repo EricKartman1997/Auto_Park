@@ -16,13 +16,13 @@ public:
         TicketPrice = 100;
         TheEndPoint = "EndPoint";
     }
-
+    // меняет стоимость билета
     void AddTicketPrice(int num)
     {
         TicketPrice += num;
         cout << "Стоимость поездки увеличина" << endl;
     }
-
+    // выводит на экран информацию
     void Get_info()
     {
         cout << "Id: " << GetId() << endl;
@@ -33,8 +33,9 @@ public:
         cout << "Стоимость билета: " << GetTicketPrice() << endl;
         cout << "Конечная станция: " << GetTheEndPoint() << endl;
     }
-
+    // возвращает стоимость билета
     int GetTicketPrice() const { return TicketPrice; }
+    // возвращает конечную точку маршрута
     string GetTheEndPoint() const { return TheEndPoint; }
 
 };

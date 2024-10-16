@@ -9,12 +9,6 @@ private:
     int Day, Month, Year, Age, Opening_hours;
     float Salary, Money;
 
-    void Retire()
-    {
-        cout << "Работник: " << Name << " " << Surname << " " << Patronymic << " - Уволен" << endl;
-
-    }
-
 public:
 
     Employee(const string& name, const string& surname, const string& patronymic,
@@ -45,11 +39,13 @@ public:
         Retire();
     }
     */
+    // выдает зарплату работнику
     void Get_salary()
     {
         Money += Salary;
         cout << "Зараплата получена: " << Salary << endl;
     }
+    // выводит на экран информацию
     void Get_info()
     {
         cout << "Имя: " << Name << endl;
@@ -63,18 +59,31 @@ public:
         cout << "Зарплата: " << Salary << endl;
         cout << "Наличные: " << Money << endl;
     }
+    // возвращает имя работника
     string GetName() const { return Name; }
+    // возвращает фамилию работника
     string GetSurname() const { return Surname; }
+    // возвращает отчество работника
     string GetPatronymic() const { return Patronymic; }
+    // возвращает пол работника
     string GetGender() const { return Gender; }
+    // возвращает номер телефона работника
     string GetPhone_namber() const { return Phone_namber; }
+    // возвращает день рождения работника
     int GetDay() const { return Day; }
+    // возвращает месяц рождения работника
     int GetMonth() const { return Month; }
+    // возвращает год рождения работника
     int GetYear() const { return Year; }
+    // возвращает возраст работника
     int GetAge() const { return Age; }
+    // возвращает время работы работника
     int GetOpening_hours() const { return Opening_hours; }
+    // возвращает зарплату работника
     float GetSalary() const { return Salary; }
+    // возвращает наличные работника
     float GetMoney() const { return Money; }
+
 
 
 };

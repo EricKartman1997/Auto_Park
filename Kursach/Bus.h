@@ -21,13 +21,13 @@ public:
 		Model = "0";
 		Travel = 0;
 	}
-
+	// изменяет количество поездок
 	void AddTrip(int num)
 	{
 		Travel += num;
 		cout << "Выезды на автобусе прибавлены" << endl;
 	}
-
+	// выводит на экран информацию
 	void Get_info()
 	{
 		cout << "Id: " << GetId() << endl;
@@ -36,11 +36,15 @@ public:
 		cout << "Модель: " << GetModel() << endl;
 		cout << "Количество выездов: " << GetTravel() << endl;
 	}
-
+	// возвращает Id
 	string GetId() const { return Id; }
+	// возвращает год выпуска автобуса
 	int GetYearOfManufacture() const { return YearOfManufacture; }
+	// возвращает количество поездок
 	int GetTravel() const { return Travel; }
+	// возвращает марку автобуса
 	string GetMarka() const { return Marka; }
+	// возвращает модель автобуса
 	string GetModel() const { return Model; }
 };
 

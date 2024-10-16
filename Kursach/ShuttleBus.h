@@ -18,13 +18,13 @@ public:
         Purpose_shuttle = "";
 
     }
-
+    // возвращает конечную точку маршрута
     void AddPassengers(int num)
     {
         Passengers += num;
         cout << "Количество пассажиров изменено" << endl;
     }
-
+    // выводит на экран информацию
     void const Get_info()
     {
         cout << "Id: " << GetId() << endl;
@@ -35,8 +35,9 @@ public:
         cout << "Количество пассажиров: " << GetPassengers() << endl;
         cout << "Последняя остановка: " << GetPurpose() << endl;
     }
-
+    // возвращает количество пассажиров
     int GetPassengers() const { return Passengers; }
+    // возвращает цель маршрута
     string GetPurpose() const { return Purpose_shuttle; }
 
 };

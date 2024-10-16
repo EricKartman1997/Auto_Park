@@ -20,12 +20,13 @@ public:
         Kilometrage = 0;
     }
 
-
+    // прибавляет киллометраж 
     void Plus_Kilometrage(float num)
     {
         Kilometrage += num;
         cout << "У водителя " << GetSurname()<<" " << GetName() << " " << GetPatronymic() << " прибавлено " << num << " киллометров" << endl;
     }
+    // выводит на экран информацию
     void Get_info()
     {
         cout << "Имя: " << GetName() << endl;
@@ -41,7 +42,9 @@ public:
         cout << "Стаж вождения: " << GetExperience() << endl;
         cout << "Пройдено киллометров: " << GetKilometrage() << endl;
     }
+    // возвращает стаж водителя
     int GetExperience() const { return Experience; }
+    // возвращает киллометраж водителя 
     float GetKilometrage() const { return Kilometrage; }
 
 };

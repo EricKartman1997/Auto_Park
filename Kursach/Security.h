@@ -19,12 +19,13 @@ public:
         Verified_person = 0;
         Coffe_drink = 0;
     }
-
+    // изменяет количество выпитых чашек кофе
     void Drink_coffe(int num)
     {
         Coffe_drink += num;
         cout << "Охраник " << GetSurname() << " " << GetName() << " " << GetPatronymic() << " выпил " << num << " чашки коффе" << endl;
     }
+    // выводит на экран информацию
     void Get_info()
     {
         cout << "Имя: " << GetName() << endl;
@@ -40,7 +41,9 @@ public:
         cout << "Проверенно человек: " << GetVerified_person() << endl;
         cout << "Выпито коффе: " << GetCoffe_drink() << endl;
     }
+    // возвращет количество проверенных людей
     int GetVerified_person() const { return Verified_person; }
+    // возвращает количество выпитых чашак с кофе
     int GetCoffe_drink() const { return Coffe_drink; }
 };
 
